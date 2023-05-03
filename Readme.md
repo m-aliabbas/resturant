@@ -2,7 +2,7 @@
 
 ## Installation
 
-Please run following 
+Please run following
 
 ```
 pip install -r requirments.txt
@@ -10,14 +10,13 @@ pip install -r requirments.txt
 
 ### To Run
 
-
-rasa run  -m models/20230503-010724-diagonal-bogey.tar.gz --enable-api 
+rasa run  -m models/20230503-010724-diagonal-bogey.tar.gz --enable-api
 
 ### To Use
 
-Send post request to 
+Send post request to
 
-localhost:port/models/parse
+http://0.0.0.0:5005/model/parse
 
 ```{
 {
