@@ -93,6 +93,69 @@ nlu:
 
 - intent: place_order
   examples: |
+    - I'd like to place an order
+    - I want to order something
+    - Can I place an order, please?
+    - I would like to make an order
+    - Please take my order
+    - I want to place an order for delivery
+    - Can I get something to eat, please?
+    - I'd like to order some food
+    - Please put in an order for me
+    - I want to order for pick up
+    - I'd like to place a to-go order
+    - Can I make an order for later?
+    - I want to place an order for my family
+    - I'd like to order for a party
+    - Please take my order for tonight
+    - I'd like to place an order for a group
+    - I want to place an order for my friends
+    - Can I make a reservation and order in advance?
+    - I'd like to order for a special event
+    - I'd like to make a large order
+    - I'm hungry, can I order something?
+    - I want to order food, I'm starving
+    - I'm famished, please take my order
+    - I need to order some food, I'm so hungry
+    - I'm really hungry, what can I order?
+    - Can I get some food, I haven't eaten all day
+    - I'm starving, let's place an order
+    - I need to satisfy my hunger, what can I order?
+    - I'm feeling hungry, can you help me place an order?
+    - I haven't eaten anything, I need to order something now
+    - It's time for lunch, let me place an order
+    - I need to order food before I get hangry
+    - I want to place an order, my stomach is growling
+    - I'm craving some food, can you help me order?
+    - I could really go for something to eat, let's order
+    - I'm getting hungry, can you help me with my order?
+    - It's dinner time, and I want to order some food
+    - I haven't had breakfast, I need to order something
+    - I'm getting hungry, let's get some food
+    - I could use a snack, can I place an order?
+    - I am hungry, can I order something?
+    - I want to order food, I am starving
+    - I am famished, please take my order
+    - I need to order some food, I am so hungry
+    - I am really hungry, what can I order?
+    - Can I get some food, I have not eaten all day
+    - I am starving, let's place an order
+    - I need to satisfy my hunger, what can I order?
+    - I am feeling hungry, can you help me place an order?
+    - I have not eaten anything, I need to order something now
+    - It is time for lunch, let me place an order
+    - I need to order food before I get hangry
+    - I want to place an order, my stomach is growling
+    - I am craving some food, can you help me order?
+    - I could really go for something to eat, let's order
+    - I am getting hungry, can you help me with my order?
+    - It is dinner time, and I want to order some food
+    - I have not had breakfast, I need to order something
+    - I am getting hungry, let's get some food
+    - I could use a snack, can I place an order?
+
+- intent: order_pizza
+  examples: |
     - I'd like to order a [large](pizza_size) [pepperoni](pizza_type) pizza please with a [Coke](drink)
     - Can I get a [medium](pizza_size) [cheese](pizza_type) pizza and a [Sprite](drink)?
     - I want a [small](pizza_size) [mushroom](topping) pizza with a [root beer](drink)
@@ -132,9 +195,6 @@ nlu:
     - I'd like a [pepperoni](pizza_type) pizza with [no crust](crust) and a [lemonade](drink)
     - Can I get a [large](pizza_size) pizza with [peppers](topping) and [onions](topping) and a [Diet Coke](drink)?
     - I want a [medium](pizza_size) pizza
-
-- intent: order_pizza
-  examples: |
     - I would like to order a [large](pizza_size) [chicken fajita](pizza_type) pizza
     - Can I get a [medium](pizza_size) [pepperoni](pizza_type) pizza?
     - I want a [small](pizza_size) [veggie](pizza_type) pizza
@@ -582,6 +642,142 @@ nlu:
     - Many thanks
     - Cheers
     - Thanks a lot
+
+- intent: goodbye
+  examples: |
+    - Goodbye!
+    - Bye!
+    - See you later!
+    - Have a nice day!
+    - Thank you and bye!
+    - I'm done for now. Goodbye!
+    - Catch you later!
+    - See you soon!
+    - Talk to you later!
+    - Goodbye, take care!
+    - Goodbye!
+    - Bye!
+    - See you later!
+    - Have a nice day!
+    - Thank you and bye!
+    - I'm done for now. Goodbye!
+    - Catch you later!
+    - See you soon!
+    - Talk to you later!
+    - Goodbye, take care!
+    - Adios!
+    - Later!
+    - Peace out!
+    - Farewell!
+    - Hasta la vista!
+    - Ciao!
+    - Cheers!
+    - Until next time!
+    - Sayonara!
+    - So long!
+    - Take it easy!
+    - Bye-bye!
+    - It was nice talking to you. Goodbye!
+    - Bye for now!
+    - Until we meet again!
+    - Have a good one!
+    - Take care of yourself!
+    - Goodnight!
+    - Gotta run. Goodbye!
+    - Thanks for your help. Goodbye!
+    - I appreciate your time. Goodbye!
+    - I'll be back. Goodbye for now!
+    - Later gator!
+    - Don't be a stranger!
+    - Adieu!
+    - Arrivederci!
+    - Toodeloo!
+    - Toodle-oo!
+    - Peace!
+    - Later on!
+    - Bye, Felicia!
+    - Until our paths cross again!
+    - Stay safe!
+    - See you on the flip side!
+    - It's been real. Goodbye!
+    - Keep in touch!
+    - Bon voyage!
+    - Keep it real!
+    - Catch up with you soon!
+    - Hasta pronto!
+    - See ya!
+
+
+- intent: cancel_order
+  examples: |
+    - I want to cancel my order
+    - Can you cancel the order I just placed?
+    - Cancel the order I just made, please
+    - I changed my mind, cancel my order
+    - Please cancel my pizza order
+    - Cancel my recent order
+    - I don't want the pizza anymore, please cancel it
+    - I'd like to cancel the order I placed a few minutes ago
+    - Oops, I need to cancel my order
+    - I made a mistake in my order, can you cancel it?
+    - Abort my pizza order, please
+    - I need to call off my order
+    - Please revoke my recent order
+    - Cancel my current order, I changed my mind
+    - I don't want the pizza, cancel my order
+    - Terminate my pizza order
+    - I no longer want the order, please cancel it
+    - Kindly cancel the order I just placed
+    - Please, can you cancel my order?
+    - I want to annul my pizza order
+    - Stop my order, please
+    - I've changed my mind, cancel the order
+    - Can you cancel my recent pizza order?
+    - I don't want that pizza, please cancel
+    - Cancel the pizza order I just made
+    - I made a mistake, cancel the order
+    - I'd like to cancel my current order
+    - Call off my order, please
+    - Please abort my pizza order
+    - Cancel my order immediately
+    - Discontinue my order
+    - I want to cancel the order I just placed
+    - I need to revoke my pizza order
+    - Cancel my pizza, I changed my mind
+    - I want to terminate my order
+    - Please annul my recent pizza order
+    - Cancel my order, I don't want it anymore
+    - I want to stop the order I just made
+    - Cancel the pizza order I placed earlier
+    - Please put an end to my order
+    - I want to cancel my pizza order right now
+    - I need to cancel my order, I changed my mind
+    - I'd like to cancel my pizza order, please
+    - Can you please cancel my order?
+    - I want to call off my pizza order
+    - Cancel my order, it was a mistake
+    - Undo my order, please
+    - I don't need the pizza anymore, cancel my order
+    - I accidentally ordered, please cancel it
+    - Cancel my order, I made an error
+    - I want to cancel the order I placed earlier
+    - Please stop processing my order
+    - I don't want that order anymore, please cancel it
+    - I need to retract my order
+    - I have to cancel my order, sorry
+    - I made a mistake with my order, please cancel it
+    - Can you please stop my order?
+    - Cancel my pizza order, I don't want it
+    - Cancel my order, I ordered the wrong thing
+    - I need to cancel my pizza order immediately
+    - I'd like to cancel the order I just made
+    - Please cancel the pizza order I placed
+    - I no longer want my order, cancel it
+    - Withdraw my pizza order, please
+    - Cancel the order, I changed my mind
+    - I want to cancel my order, it was a mistake
+    - Please halt my order
+    - I want to cancel my order right away
 
 - lookup: pizza_type
   examples: |

@@ -10,6 +10,8 @@ intents:
   - provide_address
   - ask_delivery_time
   - thankyou
+  - cancel_order
+  - goodbye
 
 entities:
   - pizza_type
@@ -27,7 +29,10 @@ responses:
 
   utter_ask_order:
     - text: "Certainly, what would you like to order?"
-
+  
+  utter_confirm_order:
+    - text: "Prefect we confirm your order of {pizza_type} and {drink}"
+    
   utter_confirm_pizza_order:
     - text: "Perfect, one {pizza_size} {pizza_type} pizza it is. Would you like to add any drinks to your order?"
 
@@ -48,3 +53,9 @@ responses:
 
   utter_goodbye:
     - text: "You're welcome. Thank you for choosing Pizza Hut. Have a great day!"
+
+  utter_ask_order_cancellation:
+   - text: "Sorry for the problem. We have cancled your order"
+
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?

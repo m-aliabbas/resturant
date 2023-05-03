@@ -8,48 +8,243 @@ version: "3.1"
   # - provide_address
   # - ask_delivery_time
   # - thankyou
+
+
 stories:
 
-- story: greet and place order
+- story: Placing a pizza order without any drinks
   steps:
   - intent: greet
   - action: utter_greet
   - intent: place_order
   - action: utter_ask_order
-
-- story: order pizza and drink
-  steps:
   - intent: order_pizza
     entities:
-      - pizza_type: "chicken fajita"
-      - pizza_size: "large"
-  - action: utter_confirm_pizza_order
-  - intent: add_drink
-    entities:
-      - drink: "coke"
-  - action: utter_confirm_drink_order
-
-- story: order pizza and decline drink
-  steps:
-  - intent: order_pizza
-    entities:
-      - pizza_type: "pepperoni"
-      - pizza_size: "medium"
+    - pizza_size: "large"
+    - pizza_type: "pepperoni"
   - action: utter_confirm_pizza_order
   - intent: decline_offer
+  - action: utter_offer_drinks
+  - intent: confirm_order
   - action: utter_ask_address
-
-- story: provide address and ask delivery time
-  steps:
   - intent: provide_address
     entities:
-      - address: "123 Main Street, Apartment 4B"
+    - address: "123 Main Street"
   - action: utter_confirm_address
   - intent: ask_delivery_time
   - action: utter_provide_delivery_time
-
-- story: thank you and goodbye
-  steps:
   - intent: thankyou
   - action: utter_goodbye
+
+- story: Placing a pizza order with drinks and dessert
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: place_order
+  - action: utter_ask_order
+  - intent: order_pizza
+    entities:
+    - pizza_size: "medium"
+    - pizza_type: "vegetarian"
+  - action: utter_confirm_pizza_order
+  - intent: add_drink
+    entities:
+    - drink: "Coke"
+  - action: utter_confirm_drink_order
+  - intent: confirm_order
+  - action: utter_ask_order
+  - intent: decline_offer
+  - action: utter_ask_address
+  - intent: provide_address
+    entities:
+    - address: "456 Elm Street"
+  - action: utter_confirm_address
+  - intent: ask_delivery_time
+  - action: utter_provide_delivery_time
+  - intent: thankyou
+  - action: utter_goodbye
+
+- story: Placing a pizza order with toppings
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: place_order
+  - action: utter_ask_order
+  - intent: order_pizza
+    entities:
+    - pizza_size: "small"
+    - pizza_type: "cheese"
+    - topping: "mushrooms"
+  - action: utter_confirm_pizza_order
+  - intent: add_drink
+    entities:
+    - drink: "Sprite"
+  - action: utter_confirm_drink_order
+  - intent: confirm_order
+  - action: utter_ask_address
+  - intent: provide_address
+    entities:
+    - address: "789 Maple Street"
+  - action: utter_confirm_address
+  - intent: ask_delivery_time
+  - action: utter_provide_delivery_time
+  - intent: thankyou
+  - action: utter_goodbye
+
+- story: Placing a pizza order without specifying toppings
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: place_order
+  - action: utter_ask_order
+  - intent: order_pizza
+    entities:
+    - pizza_size: "medium"
+    - pizza_type: "hawaiian"
+  - action: utter_confirm_pizza_order
+  - intent: add_drink
+    entities:
+    - drink: "Fanta"
+  - action: utter_confirm_drink_order
+  - intent: confirm_order
+  - action: utter_ask_address
+  - intent: provide_address
+    entities:
+    - address: "456 Elm Street"
+  - action: utter_confirm_address
+  - intent: ask_delivery_time
+  - action: utter_provide_delivery_time
+  - intent: thankyou
+  - action: utter_goodbye
+
+
+- story: Adding toppings to a pizza order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: place_order
+  - action: utter_ask_order
+  - intent: order_pizza
+    entities:
+    - pizza_size: "large"
+    - pizza_type: "pepperoni"
+  - action: utter_confirm_pizza_order
+  - intent: add_drink
+    entities:
+    - drink: "Coke"
+  - action: utter_confirm_drink_order
+  - intent: confirm_order
+  - action: utter_ask_order
+  - intent: add_drink
+    entities:
+    - drink: "Sprite"
+  - action: utter_confirm_drink_order
+  - intent: decline_offer
+  - action: utter_ask_order
+  - intent: order_pizza
+    entities:
+    - pizza_size: "large"
+    - pizza_type: "pepperoni"
+    - topping: "mushrooms"
+  - action: utter_confirm_pizza_order
+  - intent: confirm_order
+  - action: utter_ask_address
+  - intent: provide_address
+    entities:
+    - address: "123 Main Street"
+  - action: utter_confirm_address
+  - intent: ask_delivery_time
+  - action: utter_provide_delivery_time
+  - intent: thankyou
+  - action: utter_goodbye
+
+
+- story: Placing a pizza order with a specific crust type
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: place_order
+  - action: utter_ask_order
+  - intent: order_pizza
+    entities:
+    - pizza_size: "medium"
+    - pizza_type: "meat lovers"
+    - crust: "thin crust"
+  - action: utter_confirm_pizza_order
+  - intent: add_drink
+    entities:
+    - drink: "Pepsi"
+  - action: utter_confirm_drink_order
+  - intent: confirm_order
+  - action: utter_ask_address
+  - intent: provide_address
+    entities:
+    - address: "789 Maple Street"
+  - action: utter_confirm_address
+  - intent: ask_delivery_time
+  - action: utter_provide_delivery_time
+  - intent: thankyou
+  - action: utter_goodbye
+
+
+- story: Customer declines to order pizza
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: place_order
+  - action: utter_ask_order
+  - intent: decline_offer
+  - action: utter_goodbye
+
+- story: Customer cancels an order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: place_order
+  - action: utter_ask_order
+  - intent: order_pizza
+    entities:
+    - pizza_size: "large"
+    - pizza_type: "pepperoni"
+  - action: utter_confirm_pizza_order
+  - intent: add_drink
+    entities:
+    - drink: "Coke"
+  - action: utter_confirm_drink_order
+  - intent: cancel_order
+  - action: utter_ask_order_cancellation
+  - action: utter_goodbye
+
+- story: Customer declines to add drinks to order
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: place_order
+  - action: utter_ask_order
+  - intent: order_pizza
+    entities:
+    - pizza_size: "medium"
+    - pizza_type: "vegetarian"
+  - action: utter_confirm_pizza_order
+  - intent: decline_offer
+  - action: utter_confirm_order
+  - intent: provide_address
+    entities:
+    - address: "456 Elm Street"
+  - action: utter_confirm_address
+  - intent: ask_delivery_time
+  - action: utter_provide_delivery_time
+  - intent: thankyou
+  - action: utter_goodbye
+
+- story: Greeting and ending the conversation
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_order
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+
 
