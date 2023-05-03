@@ -1,5 +1,13 @@
 version: "3.1"
-
+  # - greet
+  # - place_order
+  # - order_pizza
+  # - add_drink
+  # - decline_offer
+  # - confirm_order
+  # - provide_address
+  # - ask_delivery_time
+  # - thankyou
 stories:
 
 - story: greet and place order
