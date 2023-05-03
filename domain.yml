@@ -1,0 +1,50 @@
+version: "3.1"
+
+intents:
+  - greet
+  - place_order
+  - order_pizza
+  - add_drink
+  - decline_offer
+  - confirm_order
+  - provide_address
+  - ask_delivery_time
+  - thankyou
+
+entities:
+  - pizza_type
+  - pizza_size
+  - topping
+  - crust
+  - drink
+  - address
+
+responses:
+  utter_happy:
+    - text: "Hello,"
+  utter_greet:
+    - text: "Good afternoon, thank you for contacting Pizza Hut. How may I assist you today?"
+
+  utter_ask_order:
+    - text: "Certainly, what would you like to order?"
+
+  utter_confirm_pizza_order:
+    - text: "Perfect, one {pizza_size} {pizza_type} pizza it is. Would you like to add any drinks to your order?"
+
+  utter_offer_drinks:
+    - text: "Would you like to add any drinks to your order?"
+
+  utter_confirm_drink_order:
+    - text: "Great, one {drink} it is. Anything else? We also have a large variety of desserts to choose from."
+
+  utter_ask_address:
+    - text: "Wonderful. Could you please confirm your delivery address for me?"
+
+  utter_confirm_address:
+    - text: "Excellent. Your order has been placed, and your total bill comes to ${price}. Is there anything else you would like to ask regarding your order?"
+
+  utter_provide_delivery_time:
+    - text: "Of course, the estimated delivery time is between 40 to 45 minutes."
+
+  utter_goodbye:
+    - text: "You're welcome. Thank you for choosing Pizza Hut. Have a great day!"

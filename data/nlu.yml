@@ -1,0 +1,623 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - Good afternoon
+    - Hello
+    - Hi
+    - Hello, How are You?
+    - Hey there
+    - Greetings
+    - Good evening
+    - Good morning
+    - Hi there
+    - Hey
+    - Good day
+    - Hi there
+    - Hello
+    - Hey
+    - Howdy
+    - Hi, can I order a pizza?
+    - Hello, I would like to order a pizza
+    - Hey, can I place an order for delivery?
+    - Good morning, I want to order a pizza
+    - Good afternoon, can I order a pizza for pickup?
+    - Good evening, I would like to place an order
+    - Hi, is this the pizza place?
+    - Hello, can I speak to someone about placing an order?
+    - Hey, I'm in the mood for some pizza
+    - How are you doing today?
+    - How's your day been so far?
+    - How's it going?
+    - How are things?
+    - How's life treating you?
+    - Hi there
+    - Hello
+    - Hey
+    - Good morning
+    - Good afternoon
+    - Good evening
+    - Greetings
+    - Hey there
+    - What's up
+    - Howdy
+    - Hi, can I order a pizza?
+    - Hello, I would like to order a pizza
+    - Hey, can I place an order for delivery?
+    - Good morning, I want to order a pizza
+    - Good afternoon, can I order a pizza for pickup?
+    - Good evening, I would like to place an order
+    - Hi, is this the pizza place?
+    - Hello, can I speak to someone about placing an order?
+    - Hey, I'm in the mood for some pizza
+    - Greetings, I would like to place an order for delivery
+    - Hey there, can I order a large pepperoni pizza?
+    - What's up, can I place an order for pickup?
+    - Howdy, I would like to order a pizza for delivery
+    - Hi, I'm hungry and need to order a pizza
+    - Hello, can you help me place an order for delivery?
+    - Hey, can I order a large pizza with extra cheese?
+    - Good morning, I want to order a pizza for pickup
+    - Good afternoon, can I order a pizza with mushrooms?
+    - Good evening, I would like to place an order for delivery
+    - Hi, do you have any specials on pizzas?
+    - Hello, I would like to place an order for a large pepperoni pizza
+    - Hey, can I order a pizza with sausage and onions?
+    - Greetings, can I speak to someone about placing an order for delivery?
+    - Hey there, I'm looking to order a pizza for pickup
+    - What's up, can I order a pizza with pepperoni and mushrooms?
+    - Howdy, I would like to order a large cheese pizza for delivery
+    - Hi, do you offer gluten-free pizza crust?
+    - Hello, I would like to place an order for a medium Hawaiian pizza
+    - Hey, can I order a pizza with extra sauce and extra cheese?
+    - Good morning, can I place an order for delivery to my office?
+    - Good afternoon, I want to order a pizza with olives and green peppers
+    - Good evening, I would like to order a large meat lover's pizza
+    - Hi, do you deliver to my area?
+    - Hello, I would like to place an order for pickup
+    - Hey, can I order a pizza with extra pepperoni and mushrooms?
+    - Greetings, can you tell me about your pizza toppings?
+    - Hey there, I want to order a pizza for delivery to my home
+    - What's up, can I place an order for a large vegetarian pizza?
+    - Howdy, I would like to order a pizza with extra garlic and onions
+    - Hi, do you have any vegan pizza options?
+    - Hello, I want to order a pizza with pepperoni and sausage
+    - Hey, can I order a pizza with extra sauce and no cheese?
+    - Good morning, I want to order a pizza for delivery to my hotel
+    - Good afternoon, can I place an order for a small cheese pizza?
+    - Good evening, I would like to order a pizza with chicken and bacon
+    - Hi, do you offer any gluten-free pizza toppings?
+    - Hello, I would like to place an order for a large pepper
+
+- intent: place_order
+  examples: |
+    - I'd like to order a [large](pizza_size) [pepperoni](pizza_type) pizza please with a [Coke](drink)
+    - Can I get a [medium](pizza_size) [cheese](pizza_type) pizza and a [Sprite](drink)?
+    - I want a [small](pizza_size) [mushroom](topping) pizza with a [root beer](drink)
+    - Could I get a [large](pizza_size) [sausage](pizza_type) pizza with [garlic crust](crust) and a [Fanta](drink)
+    - I'd like to order a [large](pizza_size) [veggie](pizza_type) pizza with [no cheese](topping) and a [Pepsi](drink)
+    - Can I get a pizza with [extra cheese](topping) and a [lemonade](drink)?
+    - I want to place an order for a [large](pizza_size) [supreme](pizza_type) pizza with [peppers](topping) and a [Coke Zero](drink)
+    - Could you make me a [small](pizza_size) [mushroom](topping) pizza with a [Coke](drink)?
+    - I'd like to order a [pepperoni](pizza_type) pizza with [garlic crust](crust) and a [Sprite Zero](drink)
+    - Can I get a [large](pizza_size) [half pepperoni half sausage](topping) pizza and a [Diet Pepsi](drink)?
+    - I want a [medium](pizza_size) [meat lover's](pizza_type) pizza with [olives](topping) and a [lemon-lime Gatorade](drink)
+    - Could I get a [small](pizza_size) [cheese](pizza_type) pizza with [mushrooms](topping) and [olives](topping) and a [Mountain Dew](drink)?
+    - I'd like to order a pizza with [bacon](topping) and [chicken](topping) and a [Diet Dr Pepper](drink)
+    - Can I get a pizza with [pineapple](topping) and [ham](topping) and a [Coke Zero](drink)?
+    - I want to place an order for a [large](pizza_size) [supreme](pizza_type) pizza with [extra cheese](topping) and a [Pepsi Max](drink)
+    - Could you make me a [small](pizza_size) [thin crust](crust) pizza with [pepperoni](topping) and a [Fanta Zero](drink)?
+    - I'd like a [pepperoni](pizza_type) pizza with [no crust](crust) and a [lemonade](drink)
+    - Can I get a [large](pizza_size) pizza with [peppers](topping) and [onions](topping) and a [Diet Coke](drink)?
+    - I want a [medium](pizza_size) pizza with [everything](topping) and a [Coke](drink)
+    - Could I get a [small](pizza_size) [gluten-free](crust) pizza with [olives](topping) and a [root beer](drink)?
+    - I'd like a [large](pizza_size) [pepperoni](pizza_type) pizza with [extra pepperoni](topping) and a [Coke](drink)
+    - Can I get a [medium](pizza_size) [cheese](pizza_type) pizza with [extra sauce](topping) and a [Sprite](drink)?
+    - I want a [small](pizza_size) [mushroom](topping) pizza with [thin crust](crust) and a [root beer](drink)
+    - Could I order a [large](pizza_size) [sausage](pizza_type) pizza with [regular crust](crust) and a [Fanta Orange](drink)?
+    - I'd like a [large](pizza_size) [veggie](pizza_type) pizza with [no cheese](topping) and a [Pepsi](drink)
+    - Can I get a pizza with [extra cheese](topping) and [sausage](topping) and a [Diet Coke](drink)?
+    - I want to place an order for a [large](pizza_size) [supreme](pizza_type) pizza with [peppers](topping) and [onions](topping) and a [Coke Zero](drink)
+    - Could you make me a [small](pizza_size) [mushroom](topping) pizza with [extra mushrooms](topping) and a [Coke](drink)?
+    - I'd like a [pepperoni](pizza_type) pizza with [thick crust](crust) and a [Sprite Zero](drink)
+    - Can I get a [large](pizza_size) [half pepperoni half sausage](topping) pizza with [thin crust](crust) and a [Diet Pepsi](drink)?
+    - I want a [medium](pizza_size) [meat lover's](pizza_type) pizza with [extra cheese](topping) and a [lemon-lime Gatorade](drink)
+    - Could I get a [small](pizza_size) [cheese](pizza_type) pizza with [mushrooms](topping) and [olives](topping) and a [Mountain Dew](drink)?
+    - I'd like to order a pizza with [bacon](topping) and [chicken](topping) and a [Diet Dr Pepper](drink)
+    - Can I get a pizza with [pineapple](topping) and [ham](topping) and a [Coke Zero](drink)?
+    - I want to place an order for a [large](pizza_size) [supreme](pizza_type) pizza with [extra cheese](topping) and [peppers](topping) and a [Pepsi Max](drink)
+    - Could you make me a [small](pizza_size) [thin crust](crust) pizza with [pepperoni](topping) and [mushrooms](topping) for [pickup](order_type) and a [Fanta Zero](drink)?
+    - I'd like a [pepperoni](pizza_type) pizza with [no crust](crust) and a [lemonade](drink)
+    - Can I get a [large](pizza_size) pizza with [peppers](topping) and [onions](topping) and a [Diet Coke](drink)?
+    - I want a [medium](pizza_size) pizza
+
+- intent: order_pizza
+  examples: |
+    - I would like to order a [large](pizza_size) [chicken fajita](pizza_type) pizza
+    - Can I get a [medium](pizza_size) [pepperoni](pizza_type) pizza?
+    - I want a [small](pizza_size) [veggie](pizza_type) pizza
+    - Can I have a [large](pizza_size) [cheese](pizza_type) pizza?
+    - Get me an [extra-large](pizza_size) [BBQ chicken](pizza_type) pizza
+    - I'd like a [medium](pizza_size) [Hawaiian](pizza_type) pizza
+    - Can I order a [small](pizza_size) [Margherita](pizza_type) pizza?
+    - I want to order a [large](pizza_size) [meat lover's](pizza_type) pizza
+    - Please give me a [medium](pizza_size) [buffalo chicken](pizza_type) pizza
+    - I'd like a [small](pizza_size) [veggie supreme](pizza_type) pizza
+    - I'd like to order a [large](pizza_size) [pepperoni](pizza_type) pizza with [extra cheese](topping) and a [Coke](drink), please
+    - Can I get a [medium](pizza_size) [veggie](pizza_type) pizza with [thin crust](crust) and a [Sprite](drink)?
+    - I want a [small](pizza_size) [mushroom](topping) pizza with [regular crust](crust) and a [root beer](drink)
+    - Could I order a [large](pizza_size) [sausage](pizza_type) pizza with [garlic crust](crust) and a [Fanta Orange](drink)?
+    - I'd like to order a [large](pizza_size) [cheese](pizza_type) pizza with [no sauce](topping) and a [Pepsi](drink)
+    - Can I get a pizza with [extra cheese](topping) and [sausage](topping) and a [Diet Coke](drink)?
+    - I want to order a [large](pizza_size) [supreme](pizza_type) pizza with [peppers](topping) and [onions](topping) and a [Coke Zero](drink).
+    - Could you make me a [small](pizza_size) [pepperoni](pizza_type) pizza with [extra mushrooms](topping) and a [Coke](drink)?
+    - I'd like a [pepperoni](pizza_type) pizza with [thick crust](crust) and a [Sprite Zero](drink).
+    - Can I get a [large](pizza_size) [half pepperoni half sausage](topping) pizza with [thin crust](crust) and a [Diet Pepsi](drink)?
+    - I want a [medium](pizza_size) [meat lover's](pizza_type) pizza with [extra cheese](topping) and a [lemon-lime Gatorade](drink).
+    - Could I get a [small](pizza_size) [cheese](pizza_type) pizza with [mushrooms](topping) and [olives](topping) and a [Mountain Dew](drink)?
+    - I'd like a pizza with [bacon](topping) and [chicken](topping) and a [Diet Dr Pepper](drink).
+    - Can I get a pizza with [pineapple](topping) and [ham](topping) and a [Coke Zero](drink)?
+    - I want to order a [large](pizza_size) [supreme](pizza_type) pizza with [extra cheese](topping) and [peppers](topping) and a [Pepsi Max](drink).
+    - Could you make me a [small](pizza_size) [thin crust](crust) pizza with [pepperoni](topping) and [mushrooms](topping) and a [Fanta Zero](drink)?
+    - I'd like a [pepperoni](pizza_type) pizza with [no crust](crust) and a [lemonade](drink).
+    - Can I get a [large](pizza_size) pizza with [peppers](topping) and [onions](topping) and a [Diet Coke](drink)?
+    - I want a [medium](pizza_size) pizza with everything
+    - I'd like a [large](pizza_size) [meat lover's](pizza_type) pizza with [extra pepperoni](topping) and a [Coke](drink).
+    - Can I get a [small](pizza_size) [cheese](pizza_type) pizza with [no sauce](topping) and a [Sprite](drink)?
+    - I want a [medium](pizza_size) [pepperoni](pizza_type) pizza with [thin crust](crust) and a [root beer](drink).
+    - Could I order a [large](pizza_size) [supreme](pizza_type) pizza with [green peppers](topping) and [onions](topping) and a [Fanta Grape](drink)?
+    - I'd like to order a [large](pizza_size) [vegetarian](pizza_type) pizza with [olives](topping) and [mushrooms](topping) and a [Diet Coke](drink).
+    - Can I get a pizza with [sausage](topping) and [bacon](topping) and a [Coke Zero](drink)?
+    - I want to place an order for a [medium](pizza_size) [pepperoni](pizza_type) pizza with [extra cheese](topping) and [onions](topping) and a [lemonade](drink).
+    - Could you make me a [small](pizza_size) [cheese](pizza_type) pizza with [pan crust](crust) and a [Fanta Orange](drink)?
+    - I'd like a [supreme](pizza_type) pizza with [thin crust](crust) and a [Mountain Dew](drink).
+    - Can I get a [large](pizza_size) [sausage](pizza_type) pizza with [pan crust](crust) and a [Coke](drink)?
+    - I want a [medium](pizza_size) [pepperoni](pizza_type) pizza with [thin crust](crust) and a [Sprite Zero](drink).
+    - Could I get a [small](pizza_size) [vegetarian](pizza_type) pizza with [extra olives](topping) and a [Diet Coke](drink)?
+    - I'd like to order a [large](pizza_size) [meat lover's](pizza_type) pizza with [ham](topping) and [bacon](topping) and a [root beer](drink).
+    - Can I get a pizza with [mushrooms](topping) and [sausage](topping) and a [Coke Zero](drink)?
+    - I want to place an order for a [medium](pizza_size) [supreme](pizza_type) pizza with [peppers](topping) and [sausage](topping) and a [lemon-lime Gatorade](drink).
+    - Could you make me a [small](pizza_size) [pepperoni](pizza_type) pizza with [no cheese](topping) and a [Fanta](drink)?
+    - I'd like a [large](pizza_size) [vegetarian](pizza_type) pizza with [no cheese](topping) and a [Diet Dr Pepper](drink).
+    - Can I get a [small](pizza_size) [pepperoni](pizza_type) pizza with [pan crust](crust) and a [Coke](drink)?
+    - I want a [medium](pizza_size) [cheese](pizza_type) pizza with [thin crust](crust) and [onions](topping) and a [Sprite Zero](drink).
+    - Could I order a [large](pizza_size)
+    - I'd like to order a [large](pizza_size) [cheese](pizza_type) pizza with [mushrooms](topping) and [onions](topping) and a [Coke](drink).
+    - Can I get a [small](pizza_size) [vegetarian](pizza_type) pizza with [thin crust](crust) and a [Sprite](drink)?
+    - I want a [medium](pizza_size) [pepperoni](pizza_type) pizza with [extra cheese](topping) and a [root beer](drink).
+    - Could I order a [large](pizza_size) [sausage](pizza_type) pizza with [pan crust](crust) and a [Fanta Grape](drink)?
+    - I'd like to order a [large](pizza_size) [supreme](pizza_type) pizza with [ham](topping) and [pepperoni](topping) and a [Diet Coke](drink).
+    - Can I get a pizza with [bacon](topping) and [pineapple](topping) and a [Coke](drink)?
+    - I want to place an order for a [medium](pizza_size) [meat lover's](pizza_type) pizza with [onions](topping) and [peppers](topping) and a [Sprite](drink).
+    - Could you make me a [small](pizza_size) [pepperoni](pizza_type) pizza with [thick crust](crust) and a [Fanta](drink)?
+    - I'd like a [cheese](pizza_type) pizza with [thin crust](crust) and a [Coke Zero](drink).
+    - Can I get a [large](pizza_size) [vegetable](pizza_type) pizza with [extra olives](topping) and a [Mountain Dew](drink)?
+    - I want a [medium](pizza_size) [sausage](pizza_type) pizza with [regular crust](crust) and a [lemonade](drink).
+    - Could I get a [small](pizza_size) [mushroom](topping) pizza with [garlic crust](crust) and a [Fanta Orange](drink)?
+    - I'd like a pizza with [peppers](topping) and [onions](topping) and a [Diet Dr Pepper](drink).
+    - Can I get a [large](pizza_size) [cheese](pizza_type) pizza with [thick crust](crust) and a [Coke Zero](drink)?
+    - I want a [medium](pizza_size) [pepperoni](pizza_type) pizza with [no cheese](topping) and a [Sprite Zero](drink).
+    - Could I order a [large](pizza_size) [supreme](pizza_type) pizza with [extra sausage](topping) and a [root beer](drink).
+    - I'd like to order a [large](pizza_size) [pepperoni](pizza_type) pizza with [thin crust](crust) and a [Diet Pepsi](drink).
+    - Can I get a pizza with [chicken](topping) and [onions](topping) and a [Coke](drink)?
+    - I want to place an order for a [medium](pizza_size) [vegetable](pizza_type) pizza with [olives](topping) and [mushrooms](topping) and a [lemon-lime Gatorade](drink).
+
+- intent: add_drink
+  examples: |
+    - Yes, I would like a [can of coke](drink)
+    - Can I get a [bottle of water](drink)?
+    - I'd like a [glass of lemonade](drink)
+    - Add a [bottle of Sprite](drink) to my order
+    - I want an [iced tea](drink)
+    - Give me a [can of Pepsi](drink), please
+    - Add a [glass of orange juice](drink) to my order
+    - Can I have a [cup of coffee](drink)?
+    - I'd like a [glass of milk](drink)
+    - Add a [can of Fanta](drink) to my order
+    - Yes, I would like a [can of Coke](drink) with my [medium](pizza_size) [pepperoni](pizza_type) pizza.
+    - Can I get a [bottle of water](drink) with my [large](pizza_size) [cheese](pizza_type) pizza with [extra mushrooms](topping) and [olives](topping)?
+    - I'd like a [glass of lemonade](drink) with my [small](pizza_size) [vegetable](pizza_type) pizza with [thin crust](crust).
+    - Add a [bottle of Sprite](drink) to my order for a [large](pizza_size) [meat lover's](pizza_type) pizza with [green peppers](topping) and [onions](topping).
+    - I want an [iced tea](drink) with my [medium](pizza_size) [sausage](pizza_type) pizza with [thick crust](crust) and [extra cheese](topping).
+    - Give me a [can of Pepsi](drink), please, with my [small](pizza_size) [pepperoni](pizza_type) pizza with [regular crust](crust).
+    - Add a [glass of orange juice](drink) to my order for a [large](pizza_size) [vegetarian](pizza_type) pizza with [no cheese](topping) and [no sauce](topping).
+    - Can I have a [cup of coffee](drink) with my [medium](pizza_size) [supreme](pizza_type) pizza with [extra ham](topping) and [bacon](topping)?
+    - I'd like a [glass of milk](drink) with my [small](pizza_size) [cheese](pizza_type) pizza with [thin crust](crust) and [no toppings](topping).
+    - Add a [can of Fanta](drink) to my order for a [large](pizza_size) [sausage](pizza_type) pizza with [pan crust](crust) and [extra onions](topping).
+    - Yes, I want a [bottle of Coke](drink) with my [large](pizza_size) [pepperoni](pizza_type) pizza with [thin crust](crust) and [extra cheese](topping).
+    - Can you add a [can of Sprite](drink) to my order for a [small](pizza_size) [vegetable](pizza_type) pizza with [regular crust](crust)?
+    - I'd like a [glass of lemonade](drink) with my [large](pizza_size) [supreme](pizza_type) pizza with [thin crust](crust) and [extra mushrooms](topping).
+    - Add a [bottle of water](drink) to my order for a [medium](pizza_size) [meat lover's](pizza_type) pizza with [pan crust](crust) and [no toppings](topping).
+    - Yes, I want a [can of Dr. Pepper](drink) with my [small](pizza_size) [cheese](pizza_type) pizza with [thin crust](crust) and [extra sauce](topping).
+    - Can I get a [bottle of Mountain Dew](drink) with my [large](pizza_size) [pepperoni](pizza_type) pizza with [regular crust](crust) and [extra olives](topping)?
+    - I'd like a [glass of iced tea](drink) with my [medium](pizza_size) [vegetarian](pizza_type) pizza with [thick crust](crust) and [extra cheese](topping).
+    - Can you add a [bottle of Sprite Zero](drink) to my order for a [large](pizza_size) [meat lover's](pizza_type) pizza with [thick crust](crust) and [extra bacon](topping)?
+    - Yes, I'd like a [can of Diet Coke](drink) with my [small](pizza_size) [pepperoni](pizza_type) pizza with [thin crust](crust) and [extra cheese](topping).
+    - Can I get a [bottle of water](drink) with my [medium](pizza_size) [vegetarian](pizza_type) pizza with [no cheese](topping) and [thin crust](crust)?
+    - I'd like a [glass of orange juice](drink) with my [large](pizza_size) [supreme](pizza_type) pizza with [pan crust](crust) and [extra sausage](topping).
+    - Add a [can of Fanta](drink) to my order for a [small](pizza_size) [cheese](pizza_type) pizza with [no sauce](topping) and [no toppings](topping).
+    - Can you add a [bottle of Sprite](drink) to my order for a [medium](pizza_size) [pepperoni](pizza_type) pizza with [thin crust](crust) and [extra olives](topping)?
+    - Yes, I want a [can of Coke Zero](drink) with my [large](pizza_size) [vegetarian](pizza_type) pizza with [thin crust](crust) and [extra peppers](topping).
+    - Can I get a [bottle of water](drink) with my [small](pizza_size) [supreme](pizza_type) pizza with [regular crust](crust) and [extra mushrooms](topping)?
+    - I'd like a [glass of lemonade](drink) with my [medium](pizza_size) [meat lover's](pizza_type) pizza with [pan crust](crust) and [extra onions](topping).
+    - Add a [can of Pepsi](drink) to my order for a [large](pizza_size) [pepperoni](pizza_type) pizza with [thick crust](crust) and [no toppings](topping).
+    - Can you add a [bottle of water](drink) to my order for a [small](pizza_size) [vegetable](pizza_type) pizza with [thin crust](crust) and [extra olives](topping)?
+    - Yes, I'd like a [glass of iced tea](drink) with my [large](pizza_size) [supreme](pizza_type) pizza with [thick crust](crust) and [extra sausage](topping).
+    - Can I get a [can of Mountain Dew](drink) with my [medium](pizza_size) [vegetarian](pizza_type) pizza with [pan crust](crust) and [extra onions](topping)?
+    - I'd like a [glass of milk](drink) with my [small](pizza_size) [cheese](pizza_type) pizza with [thin crust](crust) and [no toppings](topping).
+    - Add a [bottle of Sprite Zero](drink) to my order for a [large](pizza_size) [meat lover's](pizza_type) pizza with [thin crust](crust) and [extra ham](topping).
+    - Can you add a [can of Fanta Orange](drink) to my order for a [small](pizza_size) [pepperoni](pizza_type) pizza with [pan crust](crust)
+
+- intent: decline_offer
+  examples: |
+    - No, thank you
+    - I'm good, thanks
+    - Not right now
+    - No, I'm fine
+    - I don't need anything else
+    - No, thanks
+    - I'm okay, thank you
+    - That's all I need
+    - I'm all set, thanks
+    - No, I don't want anything else
+
+- intent: confirm_order
+  examples: |
+    - Yes, that's correct
+    - That's right
+    - Correct
+    - Yes, it is
+    - You got it right
+    - Absolutely
+    - That's my order
+    - You got it
+    - That's accurate
+    - Yes, that's what I want
+
+- intent: provide_address
+  examples: |
+    - My address is [house no. 385, street 15, sector F-10/2](address)
+    - I live at [123 Main Street, sector G-6/1](address)
+    - My delivery address is [56 Elm Road, sector E-7](address)
+    - Send it to [789 Oak Lane, sector G-9/1](address)
+    - Deliver it to [402 Pine Street, sector G-8/2](address)
+    - The address is [951 Maple Ave, sector F-8/3](address)
+    - I'm at [600 Birch Blvd, sector G-7/3](address)
+    - Please deliver to [210 Cedar Circle, sector E-11/3](address)
+    - My place is at [888 Cherry Drive, sector G-10/3](address)
+    - I live on [321 Walnut St., sector F-7/1](address)
+    - Send the order to [123 Willow Way, sector G-6/4](address)
+    - My address is [house no. 26, street 9, sector F-11/1](address)
+    - I live at [78 Main Boulevard, sector F-8/4](address)
+    - My delivery address is [34 Elm Street, sector G-11/3](address)
+    - Send it to [222 Oak Avenue, sector F-6/3](address)
+    - Deliver it to [789 Pine Road, sector G-13/1](address)
+    - The address is [555 Maple Lane, sector F-10/3](address)
+    - I'm at [444 Birch Close, sector G-14/4](address)
+    - Please deliver to [666 Cedar Square, sector E-9/2](address)
+    - My place is at [777 Cherry Lane, sector F-11/2](address)
+    - I live on [999 Walnut Avenue, sector G-7/2](address)
+    - Send the order to [321 Willow Road, sector G-10/1](address)
+    - My address is [house no. 12, street 3, sector F-5/3](address)
+    - I live at [456 Main Road, sector F-11/3](address)
+    - My delivery address is [222 Elm Drive, sector G-8/1](address)
+    - Send it to [333 Oak Street, sector F-6/2](address)
+    - Deliver it to [444 Pine Lane, sector G-9/4](address)
+    - The address is [555 Maple Street, sector F-10/4](address)
+    - I'm at [666 Birch Avenue, sector G-11/4](address)
+    - Please deliver to [777 Cedar Road, sector E-7/2](address)
+    - My place is at [888 Cherry Avenue, sector F-8/2](address)
+    - I live on [999 Walnut Boulevard, sector G-13/3](address)
+    - Send the order to [321 Willow Square, sector G-6/2](address)
+    - My address is [house no. 5, street 10, sector F-7/3](address)
+    - I live at [456 Main Boulevard, sector F-8/3](address)
+    - My delivery address is [222 Elm Road, sector G-10/2](address)
+    - Send it to [333 Oak Avenue, sector F-6/1](address)
+    - Deliver it to [444 Pine Close, sector G-11/2](address)
+    - The address is [555 Maple Circle, sector F-10/1](address)
+    - My address is [house no. 385, street 15, sector F-10/2, Islamabad](address)
+    - I live at [123 Main Street, sector G-6/1, Islamabad](address)
+    - My delivery address is [56 Elm Road, sector E-7, Islamabad](address)
+    - Send it to [789 Oak Lane, sector G-9/1, Islamabad](address)
+    - Deliver it to [402 Pine Street, sector G-8/2, Islamabad](address)
+    - The address is [951 Maple Ave, sector F-8/3, Islamabad](address)
+    - I'm at [600 Birch Blvd, sector G-7/3, Islamabad](address)
+    - Please deliver to [210 Cedar Circle, sector E-11/3, Islamabad](address)
+    - My place is at [888 Cherry Drive, sector G-10/3, Islamabad](address)
+    - I live on [321 Walnut St., sector F-7/1, Islamabad](address)
+    - Send the order to [123 Willow Way, sector G-6/4, Islamabad](address)
+    - My address is [house no. 26, street 9, sector F-11/1, Islamabad](address)
+    - I live at [78 Main Boulevard, sector F-8/4, Islamabad](address)
+    - My delivery address is [34 Elm Street, sector G-11/3, Islamabad](address)
+    - Send it to [222 Oak Avenue, sector F-6/3, Islamabad](address)
+    - Deliver it to [789 Pine Road, sector G-13/1, Islamabad](address)
+    - The address is [555 Maple Lane, sector F-10/3, Islamabad](address)
+    - I'm at [444 Birch Close, sector G-14/4, Islamabad](address)
+    - Please deliver to [666 Cedar Square, sector E-9/2, Islamabad](address)
+    - My place is at [777 Cherry Lane, sector F-11/2, Islamabad](address)
+    - I live on [999 Walnut Avenue, sector G-7/2, Islamabad](address)
+    - Send the order to [321 Willow Road, sector G-10/1, Islamabad](address)
+    - My address is [house no. 12, street 3, sector F-5/3, Islamabad](address)
+    - I live at [456 Main Road, sector F-11/3, Islamabad](address)
+    - My delivery address is [222 Elm Drive, sector G-8/1, Islamabad](address)
+    - Send it to [333 Oak Street, sector F-6/2, Islamabad](address)
+    - Deliver it to [444 Pine Lane, sector G-9/4, Islamabad](address)
+    - The address is [555 Maple Street, sector F-10/4, Islamabad](address)
+    - I'm at [666 Birch Avenue, sector G-11/4, Islamabad](address)
+    - Please deliver to [777 Cedar Road, sector E-7/2, Islamabad](address)
+    - My place is at [888 Cherry Avenue, sector F-8/2, Islamabad](address)
+    - I live on [999 Walnut Boulevard, sector G-13/3, Islamabad](address)
+    - Send the order to [321 Willow Square, sector G-6/2, Islamabad](address)
+    - My address is [house no. 5, street 10, sector F-7/3, Islamabad](address)
+    - I live at [456 Main Boulevard, sector F-8/3, Islamabad](address)
+    - My delivery address is [222 Elm Road, sector G-10/2, Islamabad](address)
+    - My address is [house no. 23, street 6, Shamsabad Scheme III, Rawalpindi](address)
+    - I live at [45 Murree Road, Saddar, Rawalpindi](address)
+    - My delivery address is [12 Dhoke Syedan, Rawalpindi](address)
+    - Send it to [33 Gulzar-e-Quaid, Rawalpindi](address)
+    - Deliver it to [54 Westridge III, Rawalpindi](address)
+    - The address is [67 Commercial Market, Satellite Town, Rawalpindi](address)
+    - I'm at [89 Lalazar, Rawalpindi](address)
+    - Please deliver to [98 Chaklala Scheme III, Rawalpindi](address)
+    - My place is at [101 PWD Housing Society, Rawalpindi](address)
+    - I live on [222 Bahria Town Phase 7, Rawalpindi](address)
+    - Send the order to [345 Chakri Road, Rawalpindi](address)
+    - My address is [house no. 234, street 8, Gulraiz Housing Scheme, Rawalpindi](address)
+    - I live at [56 Sadiqabad, Rawalpindi](address)
+    - My delivery address is [78 Dhoke Kala Khan, Rawalpindi](address)
+    - Send it to [99 Liaquat Bagh, Rawalpindi](address)
+    - Deliver it to [111 Bahria Town Phase 8, Rawalpindi](address)
+    - The address is [222 Saddar, Rawalpindi](address)
+    - I'm at [333 Chaklala Scheme I, Rawalpindi](address)
+    - Please deliver to [444 Tench Bhatta, Rawalpindi](address)
+    - My place is at [555 Askari 14, Rawalpindi](address)
+    - I live on [666 Harley Street, Rawalpindi](address)
+    - Send the order to [777 Peshawar Road, Rawalpindi](address)
+    - My address is [house no. 345, street 12, Gulshanabad, Rawalpindi](address)
+    - I live at [678 Airport Housing Society, Rawalpindi](address)
+    - My delivery address is [789 Chak Beli Road, Rawalpindi](address)
+    - Send it to [890 Shalley Valley, Rawalpindi](address)
+    - Deliver it to [901 Westridge I, Rawalpindi](address)
+    - The address is [1234 Tench Road, Rawalpindi](address)
+    - I'm at [5678 Ayub Park, Rawalpindi](address)
+    - Please deliver to [9012 Bostan Road, Rawalpindi](address)
+    - My place is at [3456 Gulshan Colony, Rawalpindi](address)
+    - I live on [7890 Khayaban-e-Sir Syed, Rawalpindi](address)
+    - Send the order to [1234 Saddar Bazaar, Rawalpindi](address)
+    - My address is [house no. 567, street 2, Gulistan Colony, Rawalpindi](address)
+    - I live at [890 Tipu Road, Rawalpindi](address)
+    - My delivery address is [901 Abid Majeed Road, Rawalpindi](address)
+    - Send it to [1234 Range Road, Rawalpindi](address)
+    - Deliver it to [5678 Satellite Town, Rawalpindi](address)
+    - I'm at [2345 Bahria Springs, Rawalpindi](address)
+    - Please deliver to [6789 Jhanda Chichi, Rawalpindi](address)
+    - My place is at [1234 Chaklala Heights, Rawalpindi](address)
+    - I live on [5678 Mall Road, Rawalpindi](address)
+    - Send the order to [9012 Commercial Market, Rawalpindi](address)
+    - My address is [house no. 3456, street 4, Scheme III, Rawalpindi](address)
+    - I live at [7890 Peshawar Road, Rawalpindi](address)
+    - My delivery address is [1234 Khanna Pul, Rawalpindi](address)
+    - Send it to [5678 Morgah, Rawalpindi](address)
+    - Deliver it to [9012 Adiala Road, Rawalpindi](address)
+    - My address is [Flat 12, 123 Main Street, London](address)
+    - I live at [34B Baker Street, London](address)
+    - My delivery address is [56 Oxford Road, London](address)
+    - Send it to [12 Park Lane, London](address)
+    - Deliver it to [45 Kensington High Street, London](address)
+    - The address is [9 Grosvenor Square, London](address)
+    - I'm at [21 Leicester Square, London](address)
+    - Please deliver to [8 Downing Street, London](address)
+    - My place is at [7 Chelsea Embankment, London](address)
+    - I live on [10 Abbey Road, London](address)
+    - Send the order to [1 St. James's Square, London](address)
+    - My address is [Flat 5, 7 Savoy Court, London](address)
+    - I live at [15 Fleet Street, London](address)
+    - My delivery address is [23 Charing Cross Road, London](address)
+    - Send it to [39 Piccadilly, London](address)
+    - Deliver it to [22 Berkeley Square, London](address)
+    - The address is [2 Park Street, London](address)
+    - I'm at [18 Upper Brook Street, London](address)
+    - Please deliver to [44 Queen's Gate Terrace, London](address)
+    - My place is at [16 Cheyne Walk, London](address)
+    - I live on [27 Cadogan Square, London](address)
+    - Send the order to [6 Kensington Palace Gardens, London](address)
+    - My address is [Flat 4, 29 Sloane Street, London](address)
+    - I live at [41 Baker Street, London](address)
+    - My delivery address is [3 Oxford Street, London](address)
+    - Send it to [10 Park Lane, London](address)
+    - Deliver it to [7 Kensington High Street, London](address)
+    - The address is [45 Grosvenor Square, London](address)
+    - I'm at [11 Leicester Square, London](address)
+    - Please deliver to [9 Downing Street, London](address)
+    - My place is at [8 Chelsea Embankment, London](address)
+    - I live on [12 Abbey Road, London](address)
+    - Send the order to [3 St. James's Square, London](address)
+    - My address is [Flat 7, 9 Savoy Court, London](address)
+    - I live at [20 Fleet Street, London](address)
+    - My delivery address is [12 Charing Cross Road, London](address)
+    - Send it to [45 Piccadilly, London](address)
+    - Deliver it to [18 Berkeley Square, London](address)
+    - The address is [4 Park Street, London](address)
+    - I'm at [20 Upper Brook Street, London](address)
+    - Please deliver to [33 Queen's Gate Terrace, London](address)
+    - My place is at [14 Cheyne Walk, London](address)
+    - I live on [25 Cadogan Square, London](address)
+    - Send the order to [8 Kensington Palace Gardens, London](address)
+    - My address is [Flat 8, 31 Sloane Street, London](address)
+    - My address is [Apartment 7A, 123 Main Street, New York](address)
+    - I live at [456 Park Avenue, New York](address)
+    - My delivery address is [56 Madison Avenue, New York](address)
+    - Send it to [789 Fifth Avenue, New York](address)
+    - Deliver it to [345 Park Avenue South, New York](address)
+    - The address is [123 Broadway, New York](address)
+    - I'm at [555 West 23rd Street, New York](address)
+    - Please deliver to [456 West 55th Street, New York](address)
+    - My place is at [333 East 75th Street, New York](address)
+    - I live on [1 Wall Street, New York](address)
+    - Send the order to [10 Times Square, New York](address)
+    - My address is [Apartment 5B, 345 East 86th Street, New York](address)
+    - I live at [789 5th Avenue, New York](address)
+    - My delivery address is [222 Park Avenue South, New York](address)
+    - Send it to [345 West 14th Street, New York](address)
+    - Deliver it to [456 Hudson Street, New York](address)
+    - The address is [789 Lexington Avenue, New York](address)
+    - I'm at [999 West End Avenue, New York](address)
+    - Please deliver to [111 East 56th Street, New York](address)
+    - My place is at [555 Madison Avenue, New York](address)
+    - I live on [444 Central Park West, New York](address)
+    - Send the order to [345 East 15th Street, New York](address)
+    - My address is [Apartment 3D, 222 Riverside Drive, New York](address)
+    - I live at [456 Lexington Avenue, New York](address)
+    - My delivery address is [222 5th Avenue, New York](address)
+    - Send it to [123 West 45th Street, New York](address)
+    - Deliver it to [456 East 14th Street, New York](address)
+    - The address is [789 Columbus Avenue, New York](address)
+    - I'm at [999 Park Avenue, New York](address)
+    - Please deliver to [111 Central Park North, New York](address)
+    - My place is at [555 West 59th Street, New York](address)
+    - I live on [444 West 23rd Street, New York](address)
+    - Send the order to [345 Park Avenue South, New York](address)
+    - My address is [Apartment 12B, 123 East 57th Street, New York](address)
+    - I live at [456 Madison Avenue, New York](address)
+    - My delivery address is [222 Fifth Avenue, New York](address)
+    - Send it to [123 West 14th Street, New York](address)
+    - Deliver it to [456 West 21st Street, New York](address)
+    - The address is [789 Sixth Avenue, New York](address)
+    - I'm at [999 Fifth Avenue, New York](address)
+    - Please deliver to [111 West 57th Street, New York](address)
+    - My place is at [555 West 57th Street, New York](address)
+    - I live on [444 Park Avenue, New York](address)
+    - Send the order to [345 West 14th Street, New York](address) 
+    - My address is [Apartment 5, 123 Main Street, New Boston](address)
+    - I live at [456 Market Street, New Boston](address)
+    - My delivery address is [56 Elm Street, New Boston](address)
+    - Send it to [789 Pine Street, New Boston](address)
+    - Deliver it to [345 Maple Street, New Boston](address)
+    - The address is [123 Oak Avenue, New Boston](address)
+    - I'm at [555 High Street, New Boston](address)
+    - Please deliver to [456 Walnut Street, New Boston](address)
+    - My place is at [333 Grove Street, New Boston](address)
+    - I live on [1 State Street, New Boston](address)
+    - Send the order to [10 Liberty Street, New Boston](address)
+    - My address is [Apartment 12, 345 Beacon Street, New Boston](address)
+    - I live at [789 Commonwealth Avenue, New Boston](address)
+    - My delivery address is [222 Tremont Street, New Boston](address)
+    - Send it to [345 Boylston Street, New Boston](address)
+    - Deliver it to [456 Huntington Avenue, New Boston](address)
+    - The address is [789 Newbury Street, New Boston](address)
+    - I'm at [999 Massachusetts Avenue, New Boston](address)
+    - Please deliver to [111 St. James Avenue, New Boston](address)
+    - My place is at [555 Cambridge Street, New Boston](address)
+    - I live on [444 Commonwealth Avenue, New Boston](address)
+    - Send the order to [345 Washington Street, New Boston](address)
+    - My address is [Apartment 3B, 222 Newbury Street, New Boston](address)
+    - I live at [456 Boylston Street, New Boston](address)
+    - My delivery address is [222 Huntington Avenue, New Boston](address)
+    - Send it to [123 Beacon Street, New Boston](address)
+    - Deliver it to [456 Commonwealth Avenue, New Boston](address)
+    - The address is [789 Massachusetts Avenue, New Boston](address)
+    - I'm at [999 Tremont Street, New Boston](address)
+    - Please deliver to [111 Dartmouth Street, New Boston](address)
+    - My place is at [555 Huntington Avenue, New Boston](address)
+    - I live on [444 Storrow Drive, New Boston](address)
+    - Send the order to [345 Boylston Street, New Boston](address)
+    - My address is [Apartment 7, 123 Tremont Street, New Boston](address)
+    - I live at [456 Commonwealth Avenue, New Boston](address)
+    - My delivery address is [222 Massachusetts Avenue, New Boston](address)
+    - Send it to [123 Huntington Avenue, New Boston](address)
+    - Deliver it to [456 Boylston Street, New Boston](address)
+    - The address is [789 Newbury Street, New Boston](address)
+    - I'm at [999 Beacon Street, New Boston](address)
+    - Please deliver to [111 Commonwealth Avenue, New Boston](address)
+    - My place is at [555 Boylston Street, New Boston](address)
+    - I live on [444 Huntington Avenue, New Boston](address)
+    - Send the order to [345 Tremont Street, New Boston](address)
+
+- intent: ask_delivery_time
+  examples: |
+    - could you let me know the estimated delivery time
+    - How long will it take for my order to arrive?
+    - What's the estimated time for delivery?
+    - When can I expect my order?
+    - How soon will my food be here?
+    - When will the delivery be here?
+    - Can you tell me the delivery time?
+    - How long does delivery usually take?
+    - What's the wait time for my order?
+    - When should I expect my food?
+    - Can you let me know when my order will be delivered?
+    - What time can I expect my pizza to be delivered?
+    - When will my pizza arrive?
+    - Can you give me an estimated delivery time?
+    - At what time will my order be delivered?
+    - When should I expect my pizza to arrive?
+    - What is the estimated delivery time for my order?
+    - Can you tell me the expected delivery time for my pizza?
+    - When can I expect my order to be delivered?
+    - How long will it take for my pizza to be delivered?
+    - What time should I expect my delivery?
+    - Can you give me an idea of when my pizza will be delivered?
+    - What is the expected delivery time for my order of a [large](pizza_size) [pepperoni](pizza_type) pizza with [thin crust](crust), [extra cheese](topping), and a [bottle of Coke](drink)?
+    - Can you tell me when my [medium](pizza_size) [vegetarian](pizza_type) pizza with [pan crust](crust), [no cheese](topping), and a [glass of orange juice](drink) will be delivered?
+    - When will my order of a [small](pizza_size) [cheese](pizza_type) pizza with [thick crust](crust), [no toppings](topping), and a [can of Sprite](drink) be delivered?
+    - What time can I expect my [large](pizza_size) [supreme](pizza_type) pizza with [thin crust](crust), [extra sausage](topping), and a [bottle of water](drink) to arrive?
+    - Can you give me an estimated delivery time for my [medium](pizza_size) [meat lover's](pizza_type) pizza with [pan crust](crust), [extra onions](topping), and a [glass of iced tea](drink)?
+    - When should I expect my order of a [small](pizza_size) [pepperoni](pizza_type) pizza with [regular crust](crust), [extra cheese](topping), and a [can of Pepsi](drink) to be delivered?
+    - What is the expected delivery time for my [large](pizza_size) [vegetarian](pizza_type) pizza with [thin crust](crust), [no cheese](topping), and a [bottle of Sprite Zero](drink)?
+    - Can you tell me when my [medium](pizza_size) [meat lover's](pizza_type) pizza with [thick crust](crust), [extra bacon](topping), and a [glass of lemonade](drink) will be delivered?
+    - What time can I expect my order of a [small](pizza_size) [supreme](pizza_type) pizza with [regular crust](crust), [extra mushrooms](topping), and a [can of Fanta Orange](drink) to arrive?
+    - When will my [large](pizza_size) [pepperoni](pizza_type) pizza with [thin crust](crust), [extra olives](topping), and a [bottle of Coke Zero](drink) be delivered?
+
+- intent: thankyou
+  examples: |
+    - Alright, thank you
+    - Thanks
+    - Thank you very much
+    - I appreciate it
+    - Thanks for your help
+    - Thank you so much
+    - I'm grateful for your assistance
+    - Many thanks
+    - Cheers
+    - Thanks a lot
+
+- lookup: pizza_type
+  examples: |
+    data/pizza_type.yml
+
+- lookup: pizza_size
+  examples: |
+    data/pizza_size.yml
+
+- lookup: crust
+  examples: |
+    data/crust.yml
+
+- lookup: topping
+  examples: |
+    data/topping.yml
+
+- lookup: drink
+  examples: |
+    - coke
+    - pepsi
+    - sprite
+    - root beer
+    - iced tea
+    - lemonade
+    - orange soda
+    - ginger ale
+    - mountain dew
+    - diet coke
+
+- synonym: coke
+  examples: |
+    - coca cola
+    - coca-cola
+
+- synonym: pepsi
+  examples: |
+    - pepsi-cola
+
