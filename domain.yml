@@ -12,6 +12,7 @@ intents:
   - thankyou
   - cancel_order
   - goodbye
+  - add_dessert
 
 entities:
   - pizza_type
@@ -20,6 +21,7 @@ entities:
   - crust
   - drink
   - address
+  - dessert
 
 responses:
   utter_happy:

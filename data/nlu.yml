@@ -335,7 +335,113 @@ nlu:
     - You got it
     - That's accurate
     - Yes, that's what I want
-
+- intent: add_dessert
+  examples: |
+    - I would like a slice of [tiramisu](dessert).
+    - Can I have a [brownie](dessert) with ice cream, please?
+    - I want to order [gulab jamun](dessert).
+    - Can I get a [cheesecake](dessert), please?
+    - Add [baklava](dessert) to my order.
+    - I'd like a [chocolate mousse](dessert), please.
+    - Please add [rasmalai](dessert) to my order.
+    - I'd love to have a [lemon tart](dessert).
+    - Can you add a [carrot cake](dessert) to my order?
+    - I want to try the [black forest cake](dessert).
+    - I would like to order a [rasgulla](dessert), please.
+    - Can I get some [macarons](dessert)?
+    - I'd like to have [kulfi](dessert) for dessert.
+    - Please add [shahi tukda](dessert) to my order.
+    - I want a serving of [gajar ka halwa](dessert).
+    - Can I have a [chocolate fondant](dessert) for dessert?
+    - I'd like a [sticky toffee pudding](dessert), please.
+    - Can you add a [banana split](dessert) to my order?
+    - I'd like to order a [cannoli](dessert).
+    - I want a [key lime pie](dessert) for dessert.
+    - Can I get a [chocolate cake](dessert) with my order?
+    - I would like to add a [tiramisu](dessert), please.
+    - Add a [cheesecake](dessert) to my order, please.
+    - Can you add a [brownie](dessert) to my order?
+    - I want to order a slice of [carrot cake](dessert).
+    - Please include a scoop of [ice cream](dessert) with my order.
+    - I'd like to add a [chocolate mousse](dessert) to my order.
+    - Can I have a [strawberry shortcake](dessert) with my pizza?
+    - Please add a [fruit salad](dessert) to my order.
+    - I would like a [banana split](dessert) as well.
+    - Can I get a [red velvet cake](dessert) too?
+    - Add a [pecan pie](dessert) to my order.
+    - I want to order a [lemon tart](dessert) with my pizza.
+    - I'd like to add a [raspberry cheesecake](dessert) to my order.
+    - Please add a [key lime pie](dessert) for me.
+    - I want a [blueberry cobbler](dessert) with my pizza.
+    - Can I add an [apple crumble](dessert) to my order?
+    - Please add a [pumpkin pie](dessert) for me.
+    - I'd like to order a [vanilla panna cotta](dessert) as well.
+    - Can I have a [bread pudding](dessert) with my pizza?
+    - I'd like a [chocolate chip cookie](dessert) with my order.
+    - Add a [cinnamon roll](dessert) to my order, please.
+    - I want to order a [sugar cookie](dessert) too.
+    - Please add a [donut](dessert) for me.
+    - I would like to have a [caramel flan](dessert) with my pizza.
+    - Can I add a [peanut butter cookie](dessert) to my order?
+    - I'd like a [black forest cake](dessert) as well.
+    - Please add a [white chocolate macadamia nut cookie](dessert) for me.
+    - I want a [coconut macaroon](dessert) with my pizza.
+    - Can I have a [cupcake](dessert) added to my order?
+    - I would like a [chocolate eclair](dessert) as well.
+    - Please add a [fruit tart](dessert) to my order.
+    - Can I get a [cannoli](dessert) with my pizza?
+    - I'd like to add a [creme brulee](dessert) to my order.
+    - I want to order a [cherry pie](dessert) too.
+    - Please add a [chocolate lava cake](dessert) for me.
+    - Can I have a [fudge brownie](dessert) with my pizza?
+    - I'd like a [peach cobbler](dessert) added to my order.
+    - Please add an [almond croissant](dessert) to my order.
+    - I want a [macaron](dessert)
+    - Can I get a [gulab jamun](dessert) with my order?
+    - I would like to add a [rasmalai](dessert), please.
+    - Add a [kheer](dessert) to my order, please.
+    - Can you add a [jalebi](dessert) to my order?
+    - I want to order a [barfi](dessert) with my pizza.
+    - Please include [rasgulla](dessert) with my order.
+    - I'd like to add a [ladoo](dessert) to my order.
+    - Can I have a [soan papdi](dessert) with my pizza?
+    - Please add a [gajar ka halwa](dessert) to my order.
+    - I would like a [besan ladoo](dessert) as well.
+    - Can I get a [kalakand](dessert) too?
+    - Add a [kulfi](dessert) to my order.
+    - I want to order a [shahi tukda](dessert) with my pizza.
+    - I'd like to add a [moong dal halwa](dessert) to my order.
+    - Please add a [motichoor ladoo](dessert) for me.
+    - I want a [pista burfi](dessert) with my pizza.
+    - Can I add a [rabri](dessert) to my order?
+    - Please add a [balushahi](dessert) for me.
+    - I'd like to order a [mango kulfi](dessert) as well.
+    - Can I have a [malpua](dessert) with my pizza?
+    - Can I get a [gulab jamun](dessert) with my order?
+    - I would like to add a [rasmalai](dessert), please.
+    - Add a [kheer](dessert) to my order, please.
+    - Can you add a [jalebi](dessert) to my order?
+    - I want to order a [barfi](dessert) with my pizza.
+    - Please include [rasgulla](dessert) with my order.
+    - I'd like to add a [ladoo](dessert) to my order.
+    - Can I have a [soan papdi](dessert) with my pizza?
+    - Please add a [gajar ka halwa](dessert) to my order.
+    - I would like a [besan ladoo](dessert) as well.
+    - Can I get a [kalakand](dessert) too?
+    - Add a [kulfi](dessert) to my order.
+    - I want to order a [shahi tukda](dessert) with my pizza.
+    - I'd like to add a [moong dal halwa](dessert) to my order.
+    - Please add a [motichoor ladoo](dessert) for me.
+    - I want a [pista burfi](dessert) with my pizza.
+    - Can I add a [rabri](dessert) to my order?
+    - Please add a [balushahi](dessert) for me.
+    - I'd like to order a [mango kulfi](dessert) as well.
+    - Can I have a [malpua](dessert) with my pizza?
+    - I'd like to add a [kheer](dessert) to my order, please.
+    - Can you please include a [custard](dessert) with my order?
+    - Add a [kheer](dessert) to my order, thank you.
+    - I'd like a [custard](dessert) with my pizza, please.
+    
 - intent: provide_address
   examples: |
     - My address is [house no. 385, street 15, sector F-10/2](address)
@@ -816,4 +922,52 @@ nlu:
 - synonym: pepsi
   examples: |
     - pepsi-cola
+- synonym: tiramisu
+  examples: |
+    - Italian tiramisu
+    - coffee-flavored tiramisu
 
+- synonym: brownie
+  examples: |
+    - chocolate brownie
+    - fudge brownie
+
+- synonym: gulab jamun
+  examples: |
+    - gulaab jamun
+    - roseberry
+
+- synonym: cheesecake
+  examples: |
+    - cheese cake
+    - New York cheesecake
+
+- synonym: baklava
+  examples: |
+    - baklawa
+    - balaclava
+
+- synonym: chocolate mousse
+  examples: |
+    - choco mousse
+    - chocolate foam
+
+- synonym: rasmalai
+  examples: |
+    - roshmalai
+    - ras malai
+
+- synonym: lemon tart
+  examples: |
+    - lemon dessert tart
+    - lemon custard tart
+
+- synonym: carrot cake
+  examples: |
+    - carrot and walnut cake
+    - carroty cake
+
+- synonym: black forest cake
+  examples: |
+    - black forest gateau
+    - black forest gateau

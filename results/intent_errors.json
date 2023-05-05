@@ -1,74 +1,10 @@
 [
   {
-    "text": "Could I get a small cheese pizza with mushrooms and olives and a Mountain Dew?",
-    "intent": "place_order",
+    "text": "Cheers",
+    "intent": "thankyou",
     "intent_prediction": {
-      "name": "order_pizza",
-      "confidence": 0.6264171600341797
-    }
-  },
-  {
-    "text": "I'd like to order a pizza with bacon and chicken and a Diet Dr Pepper",
-    "intent": "place_order",
-    "intent_prediction": {
-      "name": "order_pizza",
-      "confidence": 0.9247229695320129
-    }
-  },
-  {
-    "text": "I'd like a pepperoni pizza with no crust and a lemonade",
-    "intent": "place_order",
-    "intent_prediction": {
-      "name": "order_pizza",
-      "confidence": 0.8548229336738586
-    }
-  },
-  {
-    "text": "Can I get a large pizza with peppers and onions and a Diet Coke?",
-    "intent": "place_order",
-    "intent_prediction": {
-      "name": "order_pizza",
-      "confidence": 0.6188035011291504
-    }
-  },
-  {
-    "text": "Can I get a pizza with extra cheese and sausage and a Diet Coke?",
-    "intent": "order_pizza",
-    "intent_prediction": {
-      "name": "place_order",
-      "confidence": 0.8808706402778625
-    }
-  },
-  {
-    "text": "I'd like a pepperoni pizza with thick crust and a Sprite Zero.",
-    "intent": "order_pizza",
-    "intent_prediction": {
-      "name": "place_order",
-      "confidence": 0.8914895057678223
-    }
-  },
-  {
-    "text": "Can I get a large half pepperoni half sausage pizza with thin crust and a Diet Pepsi?",
-    "intent": "order_pizza",
-    "intent_prediction": {
-      "name": "place_order",
-      "confidence": 0.9490984678268433
-    }
-  },
-  {
-    "text": "I want a medium meat lover's pizza with extra cheese and a lemon-lime Gatorade.",
-    "intent": "order_pizza",
-    "intent_prediction": {
-      "name": "place_order",
-      "confidence": 0.9579647779464722
-    }
-  },
-  {
-    "text": "Can I get a pizza with pineapple and ham and a Coke Zero?",
-    "intent": "order_pizza",
-    "intent_prediction": {
-      "name": "place_order",
-      "confidence": 0.681348443031311
+      "name": "goodbye",
+      "confidence": 0.4989635944366455
     }
   }
 ]
