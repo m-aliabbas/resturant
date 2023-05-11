@@ -1,0 +1,91 @@
+{
+  "pizza_size": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 42,
+    "confused_with": {}
+  },
+  "crust": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 72,
+    "confused_with": {}
+  },
+  "burger_type": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 204,
+    "confused_with": {}
+  },
+  "food_type": {
+    "precision": 0.9984076433121019,
+    "recall": 1.0,
+    "f1-score": 0.999203187250996,
+    "support": 627,
+    "confused_with": {}
+  },
+  "dessert": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 153,
+    "confused_with": {}
+  },
+  "pizza_type": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 56,
+    "confused_with": {}
+  },
+  "additional_notes": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 112,
+    "confused_with": {}
+  },
+  "drink": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 172,
+    "confused_with": {}
+  },
+  "address": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 1327,
+    "confused_with": {}
+  },
+  "topping": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 81,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9996487530734106,
+    "recall": 1.0,
+    "f1-score": 0.9998243456876866,
+    "support": 2846
+  },
+  "macro avg": {
+    "precision": 0.9998407643312103,
+    "recall": 1.0,
+    "f1-score": 0.9999203187250997,
+    "support": 2846
+  },
+  "weighted avg": {
+    "precision": 0.9996491891625748,
+    "recall": 1.0,
+    "f1-score": 0.9998244548160136,
+    "support": 2846
+  },
+  "accuracy": 0.9998972250770812
+}

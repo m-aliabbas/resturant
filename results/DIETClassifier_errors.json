@@ -1,0 +1,40 @@
+[
+  {
+    "text": "I want fish and chips and coleslaw",
+    "entities": [
+      {
+        "start": 7,
+        "end": 21,
+        "value": "fish and chips",
+        "entity": "food_type"
+      },
+      {
+        "start": 26,
+        "end": 34,
+        "value": "coleslaw",
+        "entity": "food_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "food_type",
+        "start": 7,
+        "end": 25,
+        "confidence_entity": 0.6542207598686218,
+        "value": "fish and chips and",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "food_type",
+        "start": 26,
+        "end": 34,
+        "confidence_entity": 0.9993993043899536,
+        "value": "coleslaw",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]
