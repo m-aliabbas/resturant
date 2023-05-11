@@ -1,6 +1,0 @@
-[
-  {
-    "name": "drink",
-    "pattern": "(\\bcoke\\b|\\bpepsi\\b|\\bsprite\\b|\\broot\\ beer\\b|\\biced\\ tea\\b|\\blemonade\\b|\\borange\\ soda\\b|\\bginger\\ ale\\b|\\bmountain\\ dew\\b|\\bdiet\\ coke\\b)"
-  }
-]
