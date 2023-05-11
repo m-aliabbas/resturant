@@ -10,7 +10,7 @@ pip install -r requirments.txt
 
 ### To Run
 
-rasa run  -m models/20230504-230023-diachronic-gofer.tar.gz --enable-api
+rasa run  -m models/20230511-013837-isothermal-photon.tar.gz --enable-api
 
 ### To Use
 
