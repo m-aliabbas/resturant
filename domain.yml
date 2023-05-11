@@ -1,9 +1,9 @@
 version: "3.1"
 
 intents:
+  - order_food
   - greet
   - place_order
-  - order_pizza
   - add_drink
   - decline_offer
   - confirm_order
@@ -13,21 +13,47 @@ intents:
   - cancel_order
   - goodbye
   - add_dessert
+  - show_menu
+  - select_cuisine
+  - order_burger
 
 entities:
-  - pizza_type
-  - pizza_size
-  - topping
-  - crust
   - drink
   - address
   - dessert
+  - food_type
+  - cuisine
+  - additional_notes
+  - burger_type
+
+# slots:
+    # pizza_type:
+    #   type: text
+    #   mappings:
+    #   - type: from_entity
+    #     entity: pizza_type
+    # pizza_size:
+    #   type: text
+    #   mappings:
+    #   - type: from_entity
+    #     entity: pizza_size
+    # topping:
+    #   type: unfeaturized
+    # crust:
+    #   type: unfeaturized
+    # drink:
+    #   type: unfeaturized
+    # address:
+    #   type: text
+    # dessert:
+    #   type: unfeaturized
 
 responses:
   utter_happy:
     - text: "Hello,"
+    
   utter_greet:
-    - text: "Good afternoon, thank you for contacting Pizza Hut. How may I assist you today?"
+    - text: "Hello, thank you for contacting City Resturant. How may I assist you today?"
 
   utter_ask_order:
     - text: "Certainly, what would you like to order?"

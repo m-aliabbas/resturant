@@ -1,0 +1,314 @@
+- Whats available in [beef](food_type:cuisine)
+    - Whats available in [beaf](food_type:cuisine)
+    - What is made in [beef](food_type:cuisine)
+    - Can you show me [chicken](food_type:cuisine)
+    - Can you show me [mutton](food_type:cuisine) menu
+    - I would like to eat [chicken](food_type:cuisine)
+    - I am in the mood for [beef](food_type:cuisine)
+    - Can I have some [seafood](food_type:cuisine) dishes?
+    - I would prefer [vegetarian](food_type:cuisine) cuisine
+    - I feel like having [pork](food_type:cuisine) dishes
+    - Can we get some [vegan](food_type:cuisine) options?
+    - Do you have [lamb](food_type:cuisine) dishes?
+    - I want to eat [Italian](food_type:cuisine) cuisine
+    - I am in the mood for [Mexican](food_type:cuisine) food
+    - Can I have some [Chinese](food_type:cuisine) dishes?
+    - I would prefer [Indian](food_type:cuisine) cuisine
+    - I feel like having [French](food_type:cuisine) dishes
+    - Can we get some [Thai](food_type:cuisine) options?
+    - Do you have [Japanese](food_type:cuisine) dishes?
+    - I want to eat [Greek](food_type:cuisine) cuisine
+    - I am in the mood for [Spanish](food_type:cuisine) food
+    - Can I have some [Korean](food_type:cuisine) dishes?
+    - I would prefer [Vietnamese](food_type:cuisine) 
+    - I feel like having [Lebanese](food_type:cuisine) dishes
+    - Can we get some [Brazilian](food_type:cuisine) options?
+    - Do you have [Turkish](food_type:cuisine) dishes?
+    - I'm interested in [Mediterranean](food_type:cuisine) cuisine
+    - I'd like to try some [Caribbean](food_type:cuisine) food
+    - Can you suggest some [Middle Eastern](food_type:cuisine) dishes?
+    - I have a craving for [Moroccan](food_type:cuisine) cuisine
+    - I'm in the mood for [Ethiopian](food_type:cuisine) food
+    - Can I have some [Russian](food_type:cuisine) dishes?
+    - I'm thinking of [Portuguese](food_type:cuisine) cuisine today
+    - I'd like to try [Cuban](food_type:cuisine) food
+    - Can you suggest some [Peruvian](food_type:cuisine) dishes?
+    - I feel like eating [Polish](food_type:cuisine) cuisine
+    - I'd like to have [Filipino](food_type:cuisine) food
+    - Can I try some [Argentinian](food_type:cuisine) dishes?
+    - I'm interested in [South African](food_type:cuisine) cuisine
+    - Can we get some [Danish](food_type:cuisine) food?
+    - I'd like to try [Swedish](food_type:cuisine) cuisine
+    - Can you suggest some [Belgian](food_type:cuisine) dishes?
+    - I feel like eating [Dutch](food_type:cuisine) cuisine
+    - I'm in the mood for [Nepalese](food_type:cuisine) food
+    - Can I have some [Hungarian](food_type:cuisine) dishes?
+    - Can you tell me what's good in [chicken](food_type:cuisine)?
+    - What are some good [beef](food_type:cuisine) dishes?
+    - What are the best dishes for [seafood](food_type:cuisine)?
+    - Can you suggest some good [vegetarian](food_type:cuisine) meals?
+    - What's the best [vegan](food_type:cuisine) dish you have?
+    - What are some popular [pork](food_type:cuisine) dishes?
+    - Can you recommend a good [lamb](food_type:cuisine) dish?
+    - What's your best [Italian](food_type:cuisine) dish?
+    - What's a popular [Mexican](food_type:cuisine) dish?
+    - What's a good [Chinese](food_type:cuisine) dish?
+    - What's the most popular [Indian](food_type:cuisine) dish?
+    - What [French](food_type:cuisine) dish do you recommend?
+    - What's a must-try [Thai](food_type:cuisine) dish?
+    - What's the best [Japanese](food_type:cuisine) dish you have?
+    - What's a good [Greek](food_type:cuisine) dish to try?
+    - What's a popular [Spanish](food_type:cuisine) dish?
+    - What's a good [Korean](food_type:cuisine) dish?
+    - What's a must-try [Vietnamese](food_type:cuisine) dish?
+    - What's the best [Lebanese](food_type:cuisine) dish you have?
+    - Can you suggest a good [Brazilian](food_type:cuisine) dish?
+
+
+
+    - I like to order [chicken supreme]{"entity": "food_type", "role": "main"}
+    - Please order [chicken ribs]{"entity": "food_type", "role": "main"} for me.
+    - Order [chicken tikka]
+    - I would like to order [pizza]{"entity": "food_type", "role": "main"} and [fries]{"entity": "food_type", "role": "secondary"}
+    - I want a [burger]{"entity": "food_type", "role": "main"} and [salad]{"entity": "food_type", "role": "secondary"} please
+    - Can I have a [steak]{"entity": "food_type", "role": "main"} and [mashed potatoes]{"entity": "food_type", "role": "secondary"}?
+    - Please get me a [chicken curry]{"entity": "food_type", "role": "main"} and [rice]{"entity": "food_type", "role": "secondary"}
+    - Can I order [sushi]{"entity": "food_type", "role": "main"} and [miso soup]{"entity": "food_type", "role": "secondary"}?
+    - I'd like to have a [pasta]{"entity": "food_type", "role": "main"} and a side of [garlic bread]{"entity": "food_type", "role": "secondary"}
+    - I would like to order [barbecue ribs]{"entity": "food_type", "role": "main"} and [coleslaw]{"entity": "food_type", "role": "secondary"}
+    - Can I have a [grilled salmon]{"entity": "food_type", "role": "main"} and [asparagus]{"entity": "food_type", "role": "secondary"}?
+    - Please bring me [lamb chops]{"entity": "food_type", "role": "main"} and [roasted potatoes]{"entity": "food_type", "role": "secondary"}
+    - I'd like to order [spaghetti carbonara]{"entity": "food_type", "role": "main"} and [bruschetta]{"entity": "food_type", "role": "secondary"}
+    - Can I have [chicken alfredo]{"entity": "food_type", "role": "main"} and [garlic knots]{"entity": "food_type", "role": "secondary"}?
+    - I'd like [shrimp scampi]{"entity": "food_type", "role": "main"} and [caesar salad]{"entity": "food_type", "role": "secondary"}
+    - I want to order [fried chicken]{"entity": "food_type", "role": "main"} and [mac and cheese]{"entity": "food_type", "role": "secondary"}
+    - Can I get [beef tacos]{"entity": "food_type", "role": "main"} and [chips and salsa]{"entity": "food_type", "role": "secondary"}?
+    - I'd like [chicken tikka masala]{"entity": "food_type", "role": "main"} and [naan bread]{"entity": "food_type", "role": "secondary"}
+    - Please, I want [beef lasagna]{"entity": "food_type", "role": "main"} and [garlic bread]{"entity": "food_type", "role": "secondary"}
+    - I'd like [lobster]{"entity": "food_type", "role": "main"} and [corn on the cob]{"entity": "food_type", "role": "secondary"}
+    - I'd like [beef pho]{"entity": "food_type", "role": "main"} and [spring rolls]{"entity": "food_type", "role": "secondary"}
+    - Can I get [gyros]{"entity": "food_type", "role": "main"} and [Greek salad]{"entity": "food_type", "role": "secondary"}?
+    - I want [chicken enchiladas]{"entity": "food_type", "role": "main"} and [rice and beans]{"entity": "food_type", "role": "secondary"}
+    - Please, I'd like to have [fried rice]{"entity": "food_type", "role": "main"} and [dim sum]{"entity": "food_type", "role": "secondary"}
+    - I'd like to order [chicken parmesan]{"entity": "food_type", "role": "main"} and [spaghetti]{"entity": "food_type", "role": "secondary"}
+    - Can I have [beef stroganoff]{"entity": "food_type", "role": "main"} and [mashed potatoes]{"entity": "food_type", "role": "secondary"}?
+    - I want [fish and chips]{"entity": "food_type", "role": "main"} and [coleslaw]{"entity": "food_type", "role": "secondary"}
+    - Please, I want [chicken noodle soup]{"entity": "food_type", "role": "main"} and [breadsticks]{"entity": "food_type", "role": "secondary"}
+    - I'd like [beef teriyaki]{"entity": "food_type", "role": "main"} and [sushi rolls]{"entity": "food_type", "role": "secondary"}
+    - I would like to order [pizza]{"entity": "food_type", "role": "main"}
+    - I want a [burger]{"entity": "food_type", "role": "main"} please
+    - Can I have a [steak]{"entity": "food_type", "role": "main"}?
+    - Please get me a [chicken curry]{"entity": "food_type", "role": "main"}
+    - Can I order [sushi]{"entity": "food_type", "role": "main"}?
+    - I'd like to have a [pasta]{"entity": "food_type", "role": "main"}
+    - I would like to order [barbecue ribs]{"entity": "food_type", "role": "main"}
+    - Can I have a [grilled salmon]{"entity": "food_type", "role": "main"}?
+    - Please bring me [lamb chops]{"entity": "food_type", "role": "main"}
+    - I'd like to order [spaghetti carbonara]{"entity": "food_type", "role": "main"}
+    - Can I have [chicken alfredo]{"entity": "food_type", "role": "main"}?
+    - I'd like [shrimp scampi]{"entity": "food_type", "role": "main"}
+    - I want to order [fried chicken]{"entity": "food_type", "role": "main"}
+    - Can I get [beef tacos]{"entity": "food_type", "role": "main"}?
+    - I'd like [chicken tikka masala]{"entity": "food_type", "role": "main"}
+    - Please, I want [beef lasagna]{"entity": "food_type", "role": "main"}
+    - I'd like [lobster]{"entity": "food_type", "role": "main"}
+    - I'd like [beef pho]{"entity": "food_type", "role": "main"}
+    - Can I get [gyros]{"entity": "food_type", "role": "main"}?
+    - I want [chicken enchiladas]{"entity": "food_type", "role": "main"}
+    - Please, I'd like to have [fried rice]{"entity": "food_type", "role": "main"}
+    - I'd like to order [chicken parmesan]{"entity": "food_type", "role": "main"}
+    - Can I have [beef stroganoff]{"entity": "food_type", "role": "main"}?
+    - I want [fish and chips]{"entity": "food_type", "role": "main"}
+    - Please, I want [chicken noodle soup]{"entity": "food_type", "role": "main"}
+    - I'd like [beef teriyaki]{"entity": "food_type", "role": "main"}
+    - Can I get [beef empanadas]{"entity": "food_type", "role": "main"}?
+    - I'd like [chicken biryani]{"entity": "food_type", "role": "main"}
+    - Can I have [falafel]{"entity": "food_type", "role": "main"}?
+    - I want [pancakes]{"entity": "food_type", "role": "main"}
+    - I would like to order [chicken tikka]{"entity": "food_type", "role": "main"} and [naan]{"entity": "food_type", "role": "secondary"}
+    - Can I have [chicken biryani]{"entity": "food_type", "role": "main"} and [raita]{"entity": "food_type", "role": "secondary"}?
+    - Please get me a [chicken katsu]{"entity": "food_type", "role": "main"} and [rice]{"entity": "food_type", "role": "secondary"}
+    - I'd like to have [chicken alfredo pasta]{"entity": "food_type", "role": "main"} and [garlic bread]{"entity": "food_type", "role": "secondary"}
+    - I want [chicken enchiladas]{"entity": "food_type", "role": "main"} and [Mexican rice]{"entity": "food_type", "role": "secondary"} please
+    - Can I order [chicken pad thai]{"entity": "food_type", "role": "main"} and [spring rolls]{"entity": "food_type", "role": "secondary"}?
+    - Please, I'd like [chicken shawarma]{"entity": "food_type", "role": "main"} and [fries]{"entity": "food_type", "role": "secondary"}
+    - I want to order [chicken teriyaki]{"entity": "food_type", "role": "main"} and [sushi rolls]{"entity": "food_type", "role": "secondary"}
+    - Can I have a [chicken Caesar salad]{"entity": "food_type", "role": "main"} and [soup]{"entity": "food_type", "role": "secondary"}?
+    - I'd like [chicken fajitas]{"entity": "food_type", "role": "main"} and [tortillas]{"entity": "food_type", "role": "secondary"}
+    - I would like to order [chicken pot pie]{"entity": "food_type", "role": "main"}
+    - I want a [chicken quesadilla]{"entity": "food_type", "role": "main"} please
+    - Can I have a [chicken curry]{"entity": "food_type", "role": "main"}?
+    - Please get me a [chicken paella]{"entity": "food_type", "role": "main"}
+    - Can I order [chicken souvlaki]{"entity": "food_type", "role": "main"}?
+    - I'd like to have a [chicken marsala]{"entity": "food_type", "role": "main"}
+    - I would like to order [chicken parmigiana]{"entity": "food_type", "role": "main"}
+    - Can I have a [chicken and waffles]{"entity": "food_type", "role": "main"}?
+    - Please bring me [chicken noodle soup]{"entity": "food_type", "role": "main"}
+    - I'd like to order [chicken fried rice]{"entity": "food_type", "role": "main"}
+    - Can I have [chicken dumplings]{"entity": "food_type", "role": "main"}?
+    - I'd like [chicken jambalaya]{"entity": "food_type", "role": "main"}
+    - I want to order [chicken piccata]{"entity": "food_type", "role": "main"}
+    - Can I get [chicken kiev]{"entity": "food_type", "role": "main"}?
+    - I'd like [chicken gumbo]{"entity": "food_type", "role": "main"}
+    - I would like to order [mutton biryani]{"entity": "food_type", "role": "main"} and [raita]{"entity": "food_type", "role": "secondary"}
+    - Can I have a [mutton curry]{"entity": "food_type", "role": "main"} and [naan]{"entity": "food_type", "role": "secondary"}?
+    - I want [mutton kebabs]{"entity": "food_type", "role": "main"} and [tzatziki sauce]{"entity": "food_type", "role": "secondary"} please
+    - Please get me a [mutton rogan josh]{"entity": "food_type", "role": "main"} and [pulao]{"entity": "food_type", "role": "secondary"}
+    - Can I order [mutton stew]{"entity": "food_type", "role": "main"} and [bread rolls]{"entity": "food_type", "role": "secondary"}?
+    - I'd like to have a [mutton pie]{"entity": "food_type", "role": "main"} and [mashed potatoes]{"entity": "food_type", "role": "secondary"}
+    - I would like to order [mutton chops]{"entity": "food_type", "role": "main"} and [roasted vegetables]{"entity": "food_type", "role": "secondary"}
+    - Can I have a [mutton tagine]{"entity": "food_type", "role": "main"} and [couscous]{"entity": "food_type", "role": "secondary"}?
+    - I want [mutton vindaloo]{"entity": "food_type", "role": "main"} and [steamed rice]{"entity": "food_type", "role": "secondary"} please
+    - Please get me [mutton lasagna]{"entity": "food_type", "role": "main"} and [garlic bread]{"entity": "food_type", "role": "secondary"}
+    - I would like to order [pizza]{"entity": "food_type", "role": "main"} with [fries]{"entity": "food_type", "role": "secondary"}
+    - I want a [burger]{"entity": "food_type", "role": "main"} and [salad]{"entity": "food_type", "role": "secondary"} please
+    - Can I have a [steak]{"entity": "food_type", "role": "main"} with [mashed potatoes]{"entity": "food_type", "role": "secondary"}?
+    - Please get me a [chicken curry]{"entity": "food_type", "role": "main"} with [rice]{"entity": "food_type", "role": "secondary"}
+    - Can I order [sushi]{"entity": "food_type", "role": "main"} and [miso soup]{"entity": "food_type", "role": "secondary"}?
+    - I'd like to have a [pasta]{"entity": "food_type", "role": "main"} with a side of [garlic bread]{"entity": "food_type", "role": "secondary"}
+    - I would like to order [barbecue ribs]{"entity": "food_type", "role": "main"} with [coleslaw]{"entity": "food_type", "role": "secondary"}
+    - Can I have a [grilled salmon]{"entity": "food_type", "role": "main"} with [asparagus]{"entity": "food_type", "role": "secondary"}?
+    - Please bring me [lamb chops]{"entity": "food_type", "role": "main"} with [roasted potatoes]{"entity": "food_type", "role": "secondary"}
+    - I'd like to order [spaghetti carbonara]{"entity": "food_type", "role": "main"} with [bruschetta]{"entity": "food_type", "role": "secondary"}
+    - Can I have [chicken alfredo]{"entity": "food_type", "role": "main"} with [garlic knots]{"entity": "food_type", "role": "secondary"}?
+    - I'd like [shrimp scampi]{"entity": "food_type", "role": "main"} with [caesar salad]{"entity": "food_type", "role": "secondary"}
+    - I want to order [fried chicken]{"entity": "food_type", "role": "main"} with [mac and cheese]{"entity": "food_type", "role": "secondary"}
+    - Can I get [beef tacos]{"entity": "food_type", "role": "main"} with [chips and salsa]{"entity": "food_type", "role": "secondary"}?
+    - I'd like [chicken tikka masala]{"entity": "food_type", "role": "main"} with [naan bread]{"entity": "food_type", "role": "secondary"}
+    - Please, I want [beef lasagna]{"entity": "food_type", "role": "main"} with [garlic bread]{"entity": "food_type", "role": "secondary"}
+    - I'd like [lobster]{"entity": "food_type", "role": "main"} with [corn on the cob]{"entity": "food_type", "role": "secondary"}
+    - I'd like [beef pho]{"entity": "food_type", "role": "main"} with [spring rolls]{"entity": "food_type", "role": "secondary"}
+    - Can I get [gyros]{"entity": "food_type", "role": "main"} with [Greek salad]{"entity": "food_type", "role": "secondary"}?
+    - I want [chicken enchiladas]{"entity": "food_type", "role": "main"} with [rice and beans]{"entity": "food_type", "role": "secondary"}
+    - Please, I'd like to have [fried rice]{"entity": "food_type", "role": "main"} with [dim sum]{"entity": "food_type", "role": "secondary"}
+    - I'd like to order [chicken parmesan]{"entity": "food_type", "role": "main"} with [spaghetti]{"entity": "food_type", "role": "secondary"}
+    - Can I have [beef stroganoff]{"entity": "food_type", "role": "main"} with [mashed potatoes]{"entity": "food_type", "role": "secondary"}?
+    - I want [fish and chips]{"entity": "food_type", "role": "main"} with [coleslaw]{"entity": "food_type", "role": "secondary"}
+    - Please, I want [chicken noodle soup]{"entity": "food_type", "role": "main"} with [breadsticks]{"entity": "food_type", "role": "secondary"}
+    - I'd like [beef teriyaki]{"entity": "food_type", "role": "main"} with [sushi rolls]{"entity": "food_type", "role": "secondary"}
+    - I would like to order [pizza]{"entity": "food_type", "role": "main"}
+    - I want a [burger]{"entity": "food_type", "role": "main"} please
+    - Can I have a [steak]{"entity": "food_type", "role": "main"}?
+    - Please get me a [chicken curry]{"entity": "food_type", "role": "main"}
+    - Can I order [sushi]{"entity": "food_type", "role": "main"}?
+    - I'd like to have a [pasta]{"entity": "food_type", "role": "main"}
+    - I would like to order [barbecue ribs]{"entity": "food_type", "role": "main"}
+    - Can I have a [grilled salmon]{"entity": "food_type", "role": "main"}?
+    - Please bring me [lamb chops]{"entity": "food_type", "role": "main"}
+    - I'd like to order [spaghetti carbonara]{"entity": "food_type", "role": "main"}
+    - Can I have [chicken alfredo]{"entity": "food_type", "role": "main"}?
+    - I'd like [shrimp scampi]{"entity": "food_type", "role": "main"}
+    - I want to order [fried chicken]{"entity": "food_type", "role": "main"}
+    - Can I get [beef tacos]{"entity": "food_type", "role": "main"}?
+    - I'd like [chicken tikka masala]{"entity": "food_type", "role": "main"}
+    - Please, I want [beef lasagna]{"entity": "food_type", "role": "main"}
+    - I'd like [lobster]{"entity": "food_type", "role": "main"}
+    - I'd like [beef pho]{"entity": "food_type", "role": "main"}
+    - Can I get [gyros]{"entity": "food_type", "role": "main"}?
+    - I want [chicken enchiladas]{"entity": "food_type", "role": "main"}
+    - Please, I'd like to have [fried rice]{"entity": "food_type", "role": "main"}
+    - I'd like to order [chicken parmesan]{"entity": "food_type", "role": "main"}
+    - Can I have [beef stroganoff]{"entity": "food_type", "role": "main"}?
+    - I want [fish and chips]{"entity": "food_type", "role": "main"}
+    - Please, I want [chicken noodle soup]{"entity": "food_type", "role": "main"}
+    - I'd like [beef teriyaki]{"entity": "food_type", "role": "main"}
+    - Can I get [beef empanadas]{"entity": "food_type", "role": "main"}?
+    - I'd like [chicken biryani]{"entity": "food_type", "role": "main"}
+    - Can I have [falafel]{"entity": "food_type", "role": "main"}?
+    - I want [pancakes]{"entity": "food_type", "role": "main"}
+    - I would like to order [chicken tikka]{"entity": "food_type", "role": "main"} with [naan]{"entity": "food_type", "role": "secondary"}
+    - Can I have [chicken biryani]{"entity": "food_type", "role": "main"} with [raita]{"entity": "food_type", "role": "secondary"}?
+    - Please get me a [chicken katsu]{"entity": "food_type", "role": "main"} with [rice]{"entity": "food_type", "role": "secondary"}
+    - I'd like to have [chicken alfredo pasta]{"entity": "food_type", "role": "main"} with [garlic bread]{"entity": "food_type", "role": "secondary"}
+    - I want [chicken enchiladas]{"entity": "food_type", "role": "main"} with [Mexican rice]{"entity": "food_type", "role": "secondary"} please
+    - Can I order [chicken pad thai]{"entity": "food_type", "role": "main"} and [spring rolls]{"entity": "food_type", "role": "secondary"}?
+    - Please, I'd like [chicken shawarma]{"entity": "food_type", "role": "main"} with [fries]{"entity": "food_type", "role": "secondary"}
+    - I want to order [chicken teriyaki]{"entity": "food_type", "role": "main"} with [sushi rolls]{"entity": "food_type", "role": "secondary"}
+    - Can I have a [chicken Caesar salad]{"entity": "food_type", "role": "main"} with [soup]{"entity": "food_type", "role": "secondary"}?
+    - I'd like [chicken fajitas]{"entity": "food_type", "role": "main"} with [tortillas]{"entity": "food_type", "role": "secondary"}
+    - I would like to order [chicken pot pie]{"entity": "food_type", "role": "main"}
+    - I want a [chicken quesadilla]{"entity": "food_type", "role": "main"} please
+    - Can I have a [chicken curry]{"entity": "food_type", "role": "main"}?
+    - Please get me a [chicken paella]{"entity": "food_type", "role": "main"}
+    - Can I order [chicken souvlaki]{"entity": "food_type", "role": "main"}?
+    - I'd like to have a [chicken marsala]{"entity": "food_type", "role": "main"}
+    - I would like to order [chicken parmigiana]{"entity": "food_type", "role": "main"}
+    - Can I have a [chicken and waffles]{"entity": "food_type", "role": "main"}?
+    - Please bring me [chicken noodle soup]{"entity": "food_type", "role": "main"}
+    - I'd like to order [chicken fried rice]{"entity": "food_type", "role": "main"}
+    - Can I have [chicken dumplings]{"entity": "food_type", "role": "main"}?
+    - I'd like [chicken jambalaya]{"entity": "food_type", "role": "main"}
+    - I want to order [chicken piccata]{"entity": "food_type", "role": "main"}
+    - Can I get [chicken kiev]{"entity": "food_type", "role": "main"}?
+    - I'd like [chicken gumbo]{"entity": "food_type", "role": "main"}
+    - I would like to order [mutton biryani]{"entity": "food_type", "role": "main"} with [raita]{"entity": "food_type", "role": "secondary"}
+    - Can I have a [mutton curry]{"entity": "food_type", "role": "main"} with [naan]{"entity": "food_type", "role": "secondary"}?
+    - I want [mutton kebabs]{"entity": "food_type", "role": "main"} with [tzatziki sauce]{"entity": "food_type", "role": "secondary"} please
+    - Please get me a [mutton rogan josh]{"entity": "food_type", "role": "main"} with [pulao]{"entity": "food_type", "role": "secondary"}
+    - Can I order [mutton stew]{"entity": "food_type", "role": "main"} and [bread rolls]{"entity": "food_type", "role": "secondary"}?
+    - I'd like to have a [mutton pie]{"entity": "food_type", "role": "main"} with [mashed potatoes]{"entity": "food_type", "role": "secondary"}
+    - I would like to order [mutton chops]{"entity": "food_type", "role": "main"} with [roasted vegetables]{"entity": "food_type", "role": "secondary"}
+    - Can I have a [mutton tagine]{"entity": "food_type", "role": "main"} with [couscous]{"entity": "food_type", "role": "secondary"}?
+    - I want [mutton vindaloo]{"entity": "food_type", "role": "main"} with [steamed rice]{"entity": "food_type", "role": "secondary"} please
+    - Please get me [mutton lasagna]{"entity": "food_type", "role": "main"} with [garlic bread]{"entity": "food_type", "role": "secondary"}
+    - I would like to order [mutton shawarma]{"entity": "food_type", "role": "main"}
+    - Can I have a [mutton soup]{"entity": "food_type", "role": "main"}?
+    - I want a [mutton gyro]{"entity": "food_type", "role": "main"} please
+    - Please get me a [mutton sandwich]{"entity": "food_type", "role": "main"}
+    - Can I order [mutton sausages]{"entity": "food_type", "role": "main"}?
+    - I'd like to have a [mutton burger]{"entity": "food_type", "role": "main"}
+    - I would like to order [mutton dumplings]{"entity": "food_type", "role": "main"}
+    - Can I have [mutton tacos]{"entity": "food_type", "role": "main"}?
+    - Please bring me [mutton paella]{"entity": "food_type", "role": "main"}
+    - I'd like to order [mutton kabobs]{"entity": "food_type", "role": "main"}
+    - Can I have [mutton tikka]{"entity": "food_type", "role": "main"}?
+    - I'd like [mutton masala]{"entity": "food_type", "role": "main"}
+    - I want to order [mutton korma]{"entity": "food_type", "role": "main"}
+    - Can I get [mutton shank]{"entity": "food_type", "role": "main"}?
+    - I'd like [mutton ragu]{"entity": "food_type", "role": "main"}
+    - I would like to order [mutton satay]{"entity": "food_type", "role": "main"}
+    - Can I have a [mutton roll]{"entity": "food_type", "role": "main"}?
+    - I want a [mutton steak]{"entity": "food_type", "role": "main"} please
+    - Please get me a [mutton salad]{"entity": "food_type", "role": "main"}
+    - Can I order [mutton skewers]{"entity": "food_type", "role": "main"}?
+    - I'd like to have a [mutton wrap]{"entity": "food_type", "role": "main"}
+    - I would like to order [mutton casserole]{"entity": "food_type", "role": "main"}
+    - Can I have a [mutton chili]{"entity": "food_type", "role": "main"}?
+    - I want a [mutton roast]{"entity": "food_type", "role": "main"} please
+    - Please get me a [mutton hotpot]{"entity": "food_type", "role": "main"}
+    - Can I order [mutton tandoori]{"entity": "food_type", "role": "main"}?
+    - I would like to order [beef stroganoff]{"entity": "food_type", "role": "main"} with [mashed potatoes]{"entity": "food_type", "role": "secondary"}
+    - Can I have a [beef taco]{"entity": "food_type", "role": "main"} with [guacamole]{"entity": "food_type", "role": "secondary"}?
+    - I want [beef lasagna]{"entity": "food_type", "role": "main"} with [garlic bread]{"entity": "food_type", "role": "secondary"} please
+    - Please get me a [beef burger]{"entity": "food_type", "role": "main"} with [fries]{"entity": "food_type", "role": "secondary"}
+    - Can I order [beef enchiladas]{"entity": "food_type", "role": "main"} and [refried beans]{"entity": "food_type", "role": "secondary"}?
+    - I'd like to have a [beef stir-fry]{"entity": "food_type", "role": "main"} with [rice]{"entity": "food_type", "role": "secondary"}
+    - I would like to order [beef pho]{"entity": "food_type", "role": "main"} with [spring rolls]{"entity": "food_type", "role": "secondary"}
+    - Can I have a [beef steak]{"entity": "food_type", "role": "main"} with [roasted vegetables]{"entity": "food_type", "role": "secondary"}?
+    - I want [beef and broccoli]{"entity": "food_type", "role": "main"} with [noodles]{"entity": "food_type", "role": "secondary"} please
+    - Please get me [beef chili]{"entity": "food_type", "role": "main"} with [cornbread]{"entity": "food_type", "role": "secondary"}
+    - I would like to order [beef meatballs]{"entity": "food_type", "role": "main"}
+    - Can I have a [beef pastrami sandwich]{"entity": "food_type", "role": "main"}?
+    - I want a [beef roast]{"entity": "food_type", "role": "main"} please
+    - Please get me a [beef brisket]{"entity": "food_type", "role": "main"}
+    - Can I order [beef goulash]{"entity": "food_type", "role": "main"}?
+    - I'd like to have a [beef curry]{"entity": "food_type", "role": "main"}
+    - I would like to order [beef tandoori]{"entity": "food_type", "role": "main"}
+    - Can I have [beef satay]{"entity": "food_type", "role": "main"}?
+    - Please bring me [beef carpaccio]{"entity": "food_type", "role": "main"}
+    - I'd like to order [beef shawarma]{"entity": "food_type", "role": "main"}
+    - Can I have [beef kabobs]{"entity": "food_type", "role": "main"}?
+    - I'd like [beef bolognese pasta]{"entity": "food_type", "role": "main"}
+    - I want to order [beef empanadas]{"entity": "food_type", "role": "main"}
+    - Can I get [beef ribs]{"entity": "food_type", "role": "main"}?
+    - I'd like [beef ramen]{"entity": "food_type", "role": "main"}
+    - I would like to order [beef teriyaki]{"entity": "food_type", "role": "main"}
+    - Can I have a [beef burrito]{"entity": "food_type", "role": "main"}?
+    - I want a [beef pot pie]{"entity": "food_type", "role": "main"} please
+    - Please get me a [beef fajita]{"entity": "food_type", "role": "main"}
+    - Can I order [beef jalfrezi]{"entity": "food_type", "role": "main"}?
+    - I'd like to have a [beef katsu]{"entity": "food_type", "role": "main"}
+    - I would like to order [beef patty]{"entity": "food_type", "role": "main"}
+    - Can I have a [beef gyro]{"entity": "food_type", "role": "main"}?
+    - I want a [beef casserole]{"entity": "food_type", "role": "main"} please
+    - Please get me a [beef skewer]{"entity": "food_type", "role": "main"}
