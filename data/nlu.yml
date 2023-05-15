@@ -1,7 +1,5 @@
 version: "3.1"
-
 nlu:
-
 - intent: greet
   examples: |
     - Good afternoon
@@ -13,13 +11,9 @@ nlu:
     - Hey there
     - Greetings
     - Good evening
-    - Good morning
     - Hi there
     - Hey
     - Good day
-    - Hi there
-    - Hello
-    - Hey
     - Howdy
     - Hi, can I order a pizza?
     - Hello, I would like to order a pizza
@@ -35,25 +29,7 @@ nlu:
     - How's it going?
     - How are things?
     - How's life treating you?
-    - Hi there
-    - Hello
-    - Hey
-    - Good morning
-    - Good afternoon
-    - Good evening
-    - Greetings
-    - Hey there
     - What's up
-    - Howdy
-    - Hi, can I order a pizza?
-    - Hello, I would like to order a pizza
-    - Hey, can I place an order for delivery?
-    - Good morning, I want to order a pizza
-    - Good afternoon, can I order a pizza for pickup?
-    - Good evening, I would like to place an order
-    - Hi, is this the pizza place?
-    - Hello, can I speak to someone about placing an order?
-    - Hey, I'm in the mood for some pizza
     - Greetings, I would like to place an order for delivery
     - Hey there, can I order a large pepperoni pizza?
     - What's up, can I place an order for pickup?
@@ -94,38 +70,27 @@ nlu:
     - Hello, I would like to place an order for a large pepper
     - Hi, can I order a food?
     - Hello, I would like to order a food
-    - Hey, can I place an order for delivery?
     - Good morning, I want to order a food
     - Good afternoon, can I order a food for pickup?
-    - Good evening, I would like to place an order
     - Hi, is this the food place?
-    - Hello, can I speak to someone about placing an order?
     - Hey, I'm in the mood for some food
-    - Greetings, I would like to place an order for delivery
     - Hey there, can I order a large pepperoni food?
-    - What's up, can I place an order for pickup?
     - Howdy, I would like to order a food for delivery
     - Hi, I'm hungry and need to order a food
-    - Hello, can you help me place an order for delivery?
     - Hey, can I order a large food with extra cheese?
     - Good morning, I want to order a food for pickup
     - Good afternoon, can I order a food with mushrooms?
-    - Good evening, I would like to place an order for delivery
     - Hi, do you have any specials on foods?
     - Hello, I would like to place an order for a large pepperoni food
     - Hey, can I order a food with sausage and onions?
-    - Greetings, can I speak to someone about placing an order for delivery?
     - Hey there, I'm looking to order a food for pickup
     - What's up, can I order a food with pepperoni and mushrooms?
     - Howdy, I would like to order a large cheese food for delivery
     - Hi, do you offer gluten-free food crust?
     - Hello, I would like to place an order for a medium Hawaiian food
     - Hey, can I order a food with extra sauce and extra cheese?
-    - Good morning, can I place an order for delivery to my office?
     - Good afternoon, I want to order a food with olives and green peppers
     - Good evening, I would like to order a large meat lover's food
-    - Hi, do you deliver to my area?
-    - Hello, I would like to place an order for pickup
     - Hey, can I order a food with extra pepperoni and mushrooms?
     - Greetings, can you tell me about your food toppings?
     - Hey there, I want to order a food for delivery to my home
@@ -138,7 +103,7 @@ nlu:
     - Good afternoon, can I place an order for a small cheese food?
     - Good evening, I would like to order a food with chicken and bacon
     - Hi, do you offer any gluten-free food toppings?
-
+    - hi
 - intent: place_order
   examples: |
     - I'd like to place an order
@@ -188,22 +153,16 @@ nlu:
     - I am really hungry, what can I order?
     - Can I get some food, I have not eaten all day
     - I am starving, let's place an order
-    - I need to satisfy my hunger, what can I order?
     - I am feeling hungry, can you help me place an order?
     - I have not eaten anything, I need to order something now
     - It is time for lunch, let me place an order
-    - I need to order food before I get hangry
-    - I want to place an order, my stomach is growling
     - I am craving some food, can you help me order?
-    - I could really go for something to eat, let's order
     - I am getting hungry, can you help me with my order?
     - It is dinner time, and I want to order some food
     - I have not had breakfast, I need to order something
     - I am getting hungry, let's get some food
-    - I could use a snack, can I place an order?
     - I want to place an order
     - I want to order food
-
 - intent: order_burger
   examples: |
     - I want a [cheeseburger](burger_type) and please [add extra cheese](additional_notes).
@@ -256,13 +215,10 @@ nlu:
     - I want a [turkey burger](burger_type) with [extra lettuce](additional_notes).
     - Can you get me a [classic beef burger](burger_type), [add some jalapenos](additional_notes)?
     - I'm craving a [salmon burger](burger_type) with [no tomato](additional_notes).
-    - I'd like a [black bean burger](burger_type) with [extra avocado](additional_notes).
     - May I have a [halloumi burger](burger_type), [add some olives](additional_notes)?
-    - I want a [lamb burger](burger_type) with [extra tzatziki sauce](additional_notes).
     - Can you get me a [falafel burger](burger_type) with [no cucumber](additional_notes)?
     - I'd like a [quinoa burger](burger_type), [add some extra cheese](additional_notes).
     - I would like to order a [bison burger](burger_type) with [extra pickles](additional_notes).
-    - Can I have a [tuna burger](burger_type), [add some extra lettuce](additional_notes)?
     - I'm craving a [crab cake burger](burger_type) with [no tartar sauce](additional_notes).
     - I'd like a [chicken sandwich](burger_type) please.
     - Can I get a [turkey sandwich](burger_type)?
@@ -295,7 +251,6 @@ nlu:
     - Can I have a [club sandwich](burger_type) with [extra mayo](additional_notes)?
     - I would like to have a [reuben sandwich](burger_type) with [extra sauerkraut](additional_notes).
     - Please make me a [roast beef sandwich](burger_type) with [extra horseradish sauce](additional_notes).
-
 - intent: show_menu
   examples: |
     - What you have today?
@@ -352,13 +307,12 @@ nlu:
     - Show me the menu for gluten-free options.
     - Can I see the menu for burgers and sandwiches?
     - What are the options in the sushi menu?
-
+    - Please show me the menu
 - intent: order_food
   examples: |
-
     - I like to order [chicken supreme](food_type)
     - Please order [chicken ribs](food_type) for me.
-    - Order [chicken tikka] 
+    - Order [chicken tikka]
     - I would like to order [pizza](food_type) and [fries](food_type)
     - I want a [burger](food_type) and [salad](food_type) please
     - Can I have a [steak](food_type) and [mashed potatoes](food_type)?
@@ -451,10 +405,8 @@ nlu:
     - I want [mutton vindaloo](food_type) and [steamed rice](food_type) please
     - Please get me [mutton lasagna](food_type) and [garlic bread](food_type)
     - I would like to order [pizza](food_type) with [fries](food_type)
-    - I want a [burger](food_type) and [salad](food_type) please
     - Can I have a [steak](food_type) with [mashed potatoes](food_type)?
     - Please get me a [chicken curry](food_type) with [rice](food_type)
-    - Can I order [sushi](food_type) and [miso soup](food_type)?
     - I'd like to have a [pasta](food_type) with a side of [garlic bread](food_type)
     - I would like to order [barbecue ribs](food_type) with [coleslaw](food_type)
     - Can I have a [grilled salmon](food_type) with [asparagus](food_type)?
@@ -476,66 +428,19 @@ nlu:
     - I want [fish and chips](food_type) with [coleslaw](food_type)
     - Please, I want [chicken noodle soup](food_type) with [breadsticks](food_type)
     - I'd like [beef teriyaki](food_type) with [sushi rolls](food_type)
-    - I would like to order [pizza](food_type)
-    - I want a [burger](food_type) please
-    - Can I have a [steak](food_type)?
-    - Please get me a [chicken curry](food_type)
-    - Can I order [sushi](food_type)?
-    - I'd like to have a [pasta](food_type)
-    - I would like to order [barbecue ribs](food_type)
-    - Can I have a [grilled salmon](food_type)?
-    - Please bring me [lamb chops](food_type)
-    - I'd like to order [spaghetti carbonara](food_type)
-    - Can I have [chicken alfredo](food_type)?
-    - I'd like [shrimp scampi](food_type)
-    - I want to order [fried chicken](food_type)
-    - Can I get [beef tacos](food_type)?
-    - I'd like [chicken tikka masala](food_type)
-    - Please, I want [beef lasagna](food_type)
-    - I'd like [lobster](food_type)
-    - I'd like [beef pho](food_type)
-    - Can I get [gyros](food_type)?
-    - I want [chicken enchiladas](food_type)
-    - Please, I'd like to have [fried rice](food_type)
-    - I'd like to order [chicken parmesan](food_type)
-    - Can I have [beef stroganoff](food_type)?
-    - I want [fish and chips](food_type)
-    - Please, I want [chicken noodle soup](food_type)
-    - I'd like [beef teriyaki](food_type)
-    - Can I get [beef empanadas](food_type)?
-    - I'd like [chicken biryani](food_type)
-    - Can I have [falafel](food_type)?
-    - I want [pancakes](food_type)
     - I would like to order [chicken tikka](food_type) with [naan](food_type)
     - Can I have [chicken biryani](food_type) with [raita](food_type)?
     - Please get me a [chicken katsu](food_type) with [rice](food_type)
     - I'd like to have [chicken alfredo pasta](food_type) with [garlic bread](food_type)
     - I want [chicken enchiladas](food_type) with [Mexican rice](food_type) please
-    - Can I order [chicken pad thai](food_type) and [spring rolls](food_type)?
     - Please, I'd like [chicken shawarma](food_type) with [fries](food_type)
     - I want to order [chicken teriyaki](food_type) with [sushi rolls](food_type)
     - Can I have a [chicken Caesar salad](food_type) with [soup](food_type)?
     - I'd like [chicken fajitas](food_type) with [tortillas](food_type)
-    - I would like to order [chicken pot pie](food_type)
-    - I want a [chicken quesadilla](food_type) please
-    - Can I have a [chicken curry](food_type)?
-    - Please get me a [chicken paella](food_type)
-    - Can I order [chicken souvlaki](food_type)?
-    - I'd like to have a [chicken marsala](food_type)
-    - I would like to order [chicken parmigiana](food_type)
-    - Can I have a [chicken and waffles](food_type)?
-    - Please bring me [chicken noodle soup](food_type)
-    - I'd like to order [chicken fried rice](food_type)
-    - Can I have [chicken dumplings](food_type)?
-    - I'd like [chicken jambalaya](food_type)
-    - I want to order [chicken piccata](food_type)
-    - Can I get [chicken kiev](food_type)?
-    - I'd like [chicken gumbo](food_type)
     - I would like to order [mutton biryani](food_type) with [raita](food_type)
     - Can I have a [mutton curry](food_type) with [naan](food_type)?
     - I want [mutton kebabs](food_type) with [tzatziki sauce](food_type) please
     - Please get me a [mutton rogan josh](food_type) with [pulao](food_type)
-    - Can I order [mutton stew](food_type) and [bread rolls](food_type)?
     - I'd like to have a [mutton pie](food_type) with [mashed potatoes](food_type)
     - I would like to order [mutton chops](food_type) with [roasted vegetables](food_type)
     - Can I have a [mutton tagine](food_type) with [couscous](food_type)?
@@ -602,8 +507,9 @@ nlu:
     - Can I have a [beef gyro](food_type)?
     - I want a [beef casserole](food_type) please
     - Please get me a [beef skewer](food_type)
-
-
+    - I like to order [chicken rice](food_type)
+    - I want to order [beef pulao](food_type)
+    - I want to order [chicken pulao](food_type)
 - intent: select_cuisine
   examples: |
     - Whats available in [beef](food_type)
@@ -629,7 +535,7 @@ nlu:
     - I want to eat [Greek](food_type) cuisine
     - I am in the mood for [Spanish](food_type) food
     - Can I have some [Korean](food_type) dishes?
-    - I would prefer [Vietnamese](food_type) 
+    - I would prefer [Vietnamese](food_type)
     - I feel like having [Lebanese](food_type) dishes
     - Can we get some [Brazilian](food_type) options?
     - Do you have [Turkish](food_type) dishes?
@@ -672,118 +578,12 @@ nlu:
     - What's a must-try [Vietnamese](food_type) dish?
     - What's the best [Lebanese](food_type) dish you have?
     - Can you suggest a good [Brazilian](food_type) dish?
-
-
-# - intent: order_pizza
-#   examples: |
-#     - I'd like to order a [large](pizza_size) [pepperoni](pizza_type) pizza please with a [Coke](drink)
-#     - Can I get a [medium](pizza_size) [cheese](pizza_type) pizza and a [Sprite](drink)?
-#     - I want a [small](pizza_size) [mushroom](topping) pizza with a [root beer](drink)
-#     - Could I get a [large](pizza_size) [sausage](pizza_type) pizza with [garlic crust](crust) and a [Fanta](drink)
-#     - I'd like to order a [large](pizza_size) [veggie](pizza_type) pizza with [no cheese](topping) and a [Pepsi](drink)
-#     - Can I get a pizza with [extra cheese](topping) and a [lemonade](drink)?
-#     - I want to place an order for a [large](pizza_size) [supreme](pizza_type) pizza with [peppers](topping) and a [Coke Zero](drink)
-#     - Could you make me a [small](pizza_size) [mushroom](topping) pizza with a [Coke](drink)?
-#     - I'd like to order a [pepperoni](pizza_type) pizza with [garlic crust](crust) and a [Sprite Zero](drink)
-#     - Can I get a [large](pizza_size) [half pepperoni half sausage](topping) pizza and a [Diet Pepsi](drink)?
-#     - I want a [medium](pizza_size) [meat lover's](pizza_type) pizza with [olives](topping) and a [lemon-lime Gatorade](drink)
-#     - Could I get a [small](pizza_size) [cheese](pizza_type) pizza with [mushrooms](topping) and [olives](topping) and a [Mountain Dew](drink)?
-#     - I'd like to order a pizza with [bacon](topping) and [chicken](topping) and a [Diet Dr Pepper](drink)
-#     - Can I get a pizza with [pineapple](topping) and [ham](topping) and a [Coke Zero](drink)?
-#     - I want to place an order for a [large](pizza_size) [supreme](pizza_type) pizza with [extra cheese](topping) and a [Pepsi Max](drink)
-#     - Could you make me a [small](pizza_size) [thin crust](crust) pizza with [pepperoni](topping) and a [Fanta Zero](drink)?
-#     - I'd like a [pepperoni](pizza_type) pizza with [no crust](crust) and a [lemonade](drink)
-#     - Can I get a [large](pizza_size) pizza with [peppers](topping) and [onions](topping) and a [Diet Coke](drink)?
-#     - I want a [medium](pizza_size) pizza with [everything](topping) and a [Coke](drink)
-#     - Could I get a [small](pizza_size) [gluten-free](crust) pizza with [olives](topping) and a [root beer](drink)?
-#     - I'd like a [large](pizza_size) [pepperoni](pizza_type) pizza with [extra pepperoni](topping) and a [Coke](drink)
-#     - Can I get a [medium](pizza_size) [cheese](pizza_type) pizza with [extra sauce](topping) and a [Sprite](drink)?
-#     - I want a [small](pizza_size) [mushroom](topping) pizza with [thin crust](crust) and a [root beer](drink)
-#     - Could I order a [large](pizza_size) [sausage](pizza_type) pizza with [regular crust](crust) and a [Fanta Orange](drink)?
-#     - I'd like a [large](pizza_size) [veggie](pizza_type) pizza with [no cheese](topping) and a [Pepsi](drink)
-#     - Can I get a pizza with [extra cheese](topping) and [sausage](topping) and a [Diet Coke](drink)?
-#     - I want to place an order for a [large](pizza_size) [supreme](pizza_type) pizza with [peppers](topping) and [onions](topping) and a [Coke Zero](drink)
-#     - Could you make me a [small](pizza_size) [mushroom](topping) pizza with [extra mushrooms](topping) and a [Coke](drink)?
-#     - I'd like a [pepperoni](pizza_type) pizza with [thick crust](crust) and a [Sprite Zero](drink)
-#     - Can I get a [large](pizza_size) [half pepperoni half sausage](topping) pizza with [thin crust](crust) and a [Diet Pepsi](drink)?
-#     - I want a [medium](pizza_size) [meat lover's](pizza_type) pizza with [extra cheese](topping) and a [lemon-lime Gatorade](drink)
-#     - Could I get a [small](pizza_size) [cheese](pizza_type) pizza with [mushrooms](topping) and [olives](topping) and a [Mountain Dew](drink)?
-#     - I'd like to order a pizza with [bacon](topping) and [chicken](topping) and a [Diet Dr Pepper](drink)
-#     - Can I get a pizza with [pineapple](topping) and [ham](topping) and a [Coke Zero](drink)?
-#     - I want to place an order for a [large](pizza_size) [supreme](pizza_type) pizza with [extra cheese](topping) and [peppers](topping) and a [Pepsi Max](drink)
-#     - Could you make me a [small](pizza_size) [thin crust](crust) pizza with [pepperoni](topping) and [mushrooms](topping) for [pickup](order_type) and a [Fanta Zero](drink)?
-#     - I'd like a [pepperoni](pizza_type) pizza with [no crust](crust) and a [lemonade](drink)
-#     - Can I get a [large](pizza_size) pizza with [peppers](topping) and [onions](topping) and a [Diet Coke](drink)?
-#     - I want a [medium](pizza_size) pizza
-#     - I would like to order a [large](pizza_size) [chicken fajita](pizza_type) pizza
-#     - Can I get a [medium](pizza_size) [pepperoni](pizza_type) pizza?
-#     - I want a [small](pizza_size) [veggie](pizza_type) pizza
-#     - Can I have a [large](pizza_size) [cheese](pizza_type) pizza?
-#     - Get me an [extra-large](pizza_size) [BBQ chicken](pizza_type) pizza
-#     - I'd like a [medium](pizza_size) [Hawaiian](pizza_type) pizza
-#     - Can I order a [small](pizza_size) [Margherita](pizza_type) pizza?
-#     - I want to order a [large](pizza_size) [meat lover's](pizza_type) pizza
-#     - Please give me a [medium](pizza_size) [buffalo chicken](pizza_type) pizza
-#     - I'd like a [small](pizza_size) [veggie supreme](pizza_type) pizza
-#     - I'd like to order a [large](pizza_size) [pepperoni](pizza_type) pizza with [extra cheese](topping) and a [Coke](drink), please
-#     - Can I get a [medium](pizza_size) [veggie](pizza_type) pizza with [thin crust](crust) and a [Sprite](drink)?
-#     - I want a [small](pizza_size) [mushroom](topping) pizza with [regular crust](crust) and a [root beer](drink)
-#     - Could I order a [large](pizza_size) [sausage](pizza_type) pizza with [garlic crust](crust) and a [Fanta Orange](drink)?
-#     - I'd like to order a [large](pizza_size) [cheese](pizza_type) pizza with [no sauce](topping) and a [Pepsi](drink)
-#     - Can I get a pizza with [extra cheese](topping) and [sausage](topping) and a [Diet Coke](drink)?
-#     - I want to order a [large](pizza_size) [supreme](pizza_type) pizza with [peppers](topping) and [onions](topping) and a [Coke Zero](drink).
-#     - Could you make me a [small](pizza_size) [pepperoni](pizza_type) pizza with [extra mushrooms](topping) and a [Coke](drink)?
-#     - I'd like a [pepperoni](pizza_type) pizza with [thick crust](crust) and a [Sprite Zero](drink).
-#     - Can I get a [large](pizza_size) [half pepperoni half sausage](topping) pizza with [thin crust](crust) and a [Diet Pepsi](drink)?
-#     - I want a [medium](pizza_size) [meat lover's](pizza_type) pizza with [extra cheese](topping) and a [lemon-lime Gatorade](drink).
-#     - Could I get a [small](pizza_size) [cheese](pizza_type) pizza with [mushrooms](topping) and [olives](topping) and a [Mountain Dew](drink)?
-#     - I'd like a pizza with [bacon](topping) and [chicken](topping) and a [Diet Dr Pepper](drink).
-#     - Can I get a pizza with [pineapple](topping) and [ham](topping) and a [Coke Zero](drink)?
-#     - I want to order a [large](pizza_size) [supreme](pizza_type) pizza with [extra cheese](topping) and [peppers](topping) and a [Pepsi Max](drink).
-#     - Could you make me a [small](pizza_size) [thin crust](crust) pizza with [pepperoni](topping) and [mushrooms](topping) and a [Fanta Zero](drink)?
-#     - I'd like a [pepperoni](pizza_type) pizza with [no crust](crust) and a [lemonade](drink).
-#     - Can I get a [large](pizza_size) pizza with [peppers](topping) and [onions](topping) and a [Diet Coke](drink)?
-#     - I want a [medium](pizza_size) pizza with everything
-#     - I'd like a [large](pizza_size) [meat lover's](pizza_type) pizza with [extra pepperoni](topping) and a [Coke](drink).
-#     - Can I get a [small](pizza_size) [cheese](pizza_type) pizza with [no sauce](topping) and a [Sprite](drink)?
-#     - I want a [medium](pizza_size) [pepperoni](pizza_type) pizza with [thin crust](crust) and a [root beer](drink).
-#     - Could I order a [large](pizza_size) [supreme](pizza_type) pizza with [green peppers](topping) and [onions](topping) and a [Fanta Grape](drink)?
-#     - I'd like to order a [large](pizza_size) [vegetarian](pizza_type) pizza with [olives](topping) and [mushrooms](topping) and a [Diet Coke](drink).
-#     - Can I get a pizza with [sausage](topping) and [bacon](topping) and a [Coke Zero](drink)?
-#     - I want to place an order for a [medium](pizza_size) [pepperoni](pizza_type) pizza with [extra cheese](topping) and [onions](topping) and a [lemonade](drink).
-#     - Could you make me a [small](pizza_size) [cheese](pizza_type) pizza with [pan crust](crust) and a [Fanta Orange](drink)?
-#     - I'd like a [supreme](pizza_type) pizza with [thin crust](crust) and a [Mountain Dew](drink).
-#     - Can I get a [large](pizza_size) [sausage](pizza_type) pizza with [pan crust](crust) and a [Coke](drink)?
-#     - I want a [medium](pizza_size) [pepperoni](pizza_type) pizza with [thin crust](crust) and a [Sprite Zero](drink).
-#     - Could I get a [small](pizza_size) [vegetarian](pizza_type) pizza with [extra olives](topping) and a [Diet Coke](drink)?
-#     - I'd like to order a [large](pizza_size) [meat lover's](pizza_type) pizza with [ham](topping) and [bacon](topping) and a [root beer](drink).
-#     - Can I get a pizza with [mushrooms](topping) and [sausage](topping) and a [Coke Zero](drink)?
-#     - I want to place an order for a [medium](pizza_size) [supreme](pizza_type) pizza with [peppers](topping) and [sausage](topping) and a [lemon-lime Gatorade](drink).
-#     - Could you make me a [small](pizza_size) [pepperoni](pizza_type) pizza with [no cheese](topping) and a [Fanta](drink)?
-#     - I'd like a [large](pizza_size) [vegetarian](pizza_type) pizza with [no cheese](topping) and a [Diet Dr Pepper](drink).
-#     - Can I get a [small](pizza_size) [pepperoni](pizza_type) pizza with [pan crust](crust) and a [Coke](drink)?
-#     - I want a [medium](pizza_size) [cheese](pizza_type) pizza with [thin crust](crust) and [onions](topping) and a [Sprite Zero](drink).
-#     - Could I order a [large](pizza_size)
-#     - I'd like to order a [large](pizza_size) [cheese](pizza_type) pizza with [mushrooms](topping) and [onions](topping) and a [Coke](drink).
-#     - Can I get a [small](pizza_size) [vegetarian](pizza_type) pizza with [thin crust](crust) and a [Sprite](drink)?
-#     - I want a [medium](pizza_size) [pepperoni](pizza_type) pizza with [extra cheese](topping) and a [root beer](drink).
-#     - Could I order a [large](pizza_size) [sausage](pizza_type) pizza with [pan crust](crust) and a [Fanta Grape](drink)?
-#     - I'd like to order a [large](pizza_size) [supreme](pizza_type) pizza with [ham](topping) and [pepperoni](topping) and a [Diet Coke](drink).
-#     - Can I get a pizza with [bacon](topping) and [pineapple](topping) and a [Coke](drink)?
-#     - I want to place an order for a [medium](pizza_size) [meat lover's](pizza_type) pizza with [onions](topping) and [peppers](topping) and a [Sprite](drink).
-#     - Could you make me a [small](pizza_size) [pepperoni](pizza_type) pizza with [thick crust](crust) and a [Fanta](drink)?
-#     - I'd like a [cheese](pizza_type) pizza with [thin crust](crust) and a [Coke Zero](drink).
-#     - Can I get a [large](pizza_size) [vegetable](pizza_type) pizza with [extra olives](topping) and a [Mountain Dew](drink)?
-#     - I want a [medium](pizza_size) [sausage](pizza_type) pizza with [regular crust](crust) and a [lemonade](drink).
-#     - Could I get a [small](pizza_size) [mushroom](topping) pizza with [garlic crust](crust) and a [Fanta Orange](drink)?
-#     - I'd like a pizza with [peppers](topping) and [onions](topping) and a [Diet Dr Pepper](drink).
-#     - Can I get a [large](pizza_size) [cheese](pizza_type) pizza with [thick crust](crust) and a [Coke Zero](drink)?
-#     - I want a [medium](pizza_size) [pepperoni](pizza_type) pizza with [no cheese](topping) and a [Sprite Zero](drink).
-#     - Could I order a [large](pizza_size) [supreme](pizza_type) pizza with [extra sausage](topping) and a [root beer](drink).
-#     - I'd like to order a [large](pizza_size) [pepperoni](pizza_type) pizza with [thin crust](crust) and a [Diet Pepsi](drink).
-#     - Can I get a pizza with [chicken](topping) and [onions](topping) and a [Coke](drink)?
-#     - I want to place an order for a [medium](pizza_size) [vegetable](pizza_type) pizza with [olives](topping) and [mushrooms](topping) and a [lemon-lime Gatorade](drink).
-
+    - whats good in [chicken](food_type)
+    - what good in [beaf](food_type) menu
+    - whats good in [beef](food_type)
+    - [chicken](food_type)
+    - [beef](food_type)
+    - [mutton](food_type)
 - intent: add_drink
   examples: |
     - Yes, I would like a [can of coke](drink)
@@ -826,17 +626,15 @@ nlu:
     - Can you add a [bottle of water](drink) to my order for a [small](pizza_size) [vegetable](pizza_type) pizza with [thin crust](crust) and [extra olives](topping)?
     - Yes, I'd like a [glass of iced tea](drink) with my [large](pizza_size) [supreme](pizza_type) pizza with [thick crust](crust) and [extra sausage](topping).
     - Can I get a [can of Mountain Dew](drink) with my [medium](pizza_size) [vegetarian](pizza_type) pizza with [pan crust](crust) and [extra onions](topping)?
-    - I'd like a [glass of milk](drink) with my [small](pizza_size) [cheese](pizza_type) pizza with [thin crust](crust) and [no toppings](topping).
     - Add a [bottle of Sprite Zero](drink) to my order for a [large](pizza_size) [meat lover's](pizza_type) pizza with [thin crust](crust) and [extra ham](topping).
     - Can you add a [can of Fanta Orange](drink) to my order for a [small](pizza_size) [pepperoni](pizza_type) pizza with [pan crust](crust)
-
 - intent: decline_offer
   examples: |
     - no
     - don't
     - I dont want
     - dislike
-    - sorry 
+    - sorry
     - never
     - nup
     - nope
@@ -860,7 +658,6 @@ nlu:
     - Not now
     - Not today
     - Not interested
-    - Not right now
     - Maybe later
     - Not this time
     - I don't want to
@@ -880,11 +677,9 @@ nlu:
     - I'd prefer not to
     - No, I'm not interested
     - I'm not sure I can
-
-
 - intent: confirm_order
   examples: |
-    -  Yes 
+    - Yes
     - Yeah
     - Yup
     - right
@@ -898,18 +693,12 @@ nlu:
     - You got it
     - That's accurate
     - Yes, that's what I want
-    - Yes
-    - Yeah
-    - Yup
     - Sure
     - Of course
-    - Absolutely
     - Definitely
     - Yes, please
     - Yeah, sure
-    - Correct
     - Indeed
-    - That's right
     - That sounds good
     - That would be great
     - I'd love that
@@ -927,7 +716,6 @@ nlu:
     - Yes, I'd like that
     - Yes, I'm sure
     - Yes, I can
-
 - intent: add_dessert
   examples: |
     - I would like a slice of [tiramisu](dessert).
@@ -1010,31 +798,10 @@ nlu:
     - Please add a [balushahi](dessert) for me.
     - I'd like to order a [mango kulfi](dessert) as well.
     - Can I have a [malpua](dessert) with my pizza?
-    - Can I get a [gulab jamun](dessert) with my order?
-    - I would like to add a [rasmalai](dessert), please.
-    - Add a [kheer](dessert) to my order, please.
-    - Can you add a [jalebi](dessert) to my order?
-    - I want to order a [barfi](dessert) with my pizza.
-    - Please include [rasgulla](dessert) with my order.
-    - I'd like to add a [ladoo](dessert) to my order.
-    - Can I have a [soan papdi](dessert) with my pizza?
-    - Please add a [gajar ka halwa](dessert) to my order.
-    - I would like a [besan ladoo](dessert) as well.
-    - Can I get a [kalakand](dessert) too?
-    - Add a [kulfi](dessert) to my order.
-    - I want to order a [shahi tukda](dessert) with my pizza.
-    - I'd like to add a [moong dal halwa](dessert) to my order.
-    - Please add a [motichoor ladoo](dessert) for me.
-    - I want a [pista burfi](dessert) with my pizza.
-    - Can I add a [rabri](dessert) to my order?
-    - Please add a [balushahi](dessert) for me.
-    - I'd like to order a [mango kulfi](dessert) as well.
-    - Can I have a [malpua](dessert) with my pizza?
     - I'd like to add a [kheer](dessert) to my order, please.
     - Can you please include a [custard](dessert) with my order?
     - Add a [kheer](dessert) to my order, thank you.
     - I'd like a [custard](dessert) with my pizza, please.
-    
 - intent: provide_address
   examples: |
     - My address is [house no. 385, street 15, sector F-10/2](address)
@@ -1248,7 +1015,7 @@ nlu:
     - Please deliver to [111 West 57th Street, New York](address)
     - My place is at [555 West 57th Street, New York](address)
     - I live on [444 Park Avenue, New York](address)
-    - Send the order to [345 West 14th Street, New York](address) 
+    - Send the order to [345 West 14th Street, New York](address)
     - My address is [Apartment 5, 123 Main Street, New Boston](address)
     - I live at [456 Market Street, New Boston](address)
     - My delivery address is [56 Elm Street, New Boston](address)
@@ -1287,13 +1054,11 @@ nlu:
     - My delivery address is [222 Massachusetts Avenue, New Boston](address)
     - Send it to [123 Huntington Avenue, New Boston](address)
     - Deliver it to [456 Boylston Street, New Boston](address)
-    - The address is [789 Newbury Street, New Boston](address)
     - I'm at [999 Beacon Street, New Boston](address)
     - Please deliver to [111 Commonwealth Avenue, New Boston](address)
     - My place is at [555 Boylston Street, New Boston](address)
     - I live on [444 Huntington Avenue, New Boston](address)
     - Send the order to [345 Tremont Street, New Boston](address)
-
 - intent: ask_delivery_time
   examples: |
     - could you let me know the estimated delivery time
@@ -1328,7 +1093,6 @@ nlu:
     - Can you tell me when my [medium](pizza_size) [meat lover's](pizza_type) pizza with [thick crust](crust), [extra bacon](topping), and a [glass of lemonade](drink) will be delivered?
     - What time can I expect my order of a [small](pizza_size) [supreme](pizza_type) pizza with [regular crust](crust), [extra mushrooms](topping), and a [can of Fanta Orange](drink) to arrive?
     - When will my [large](pizza_size) [pepperoni](pizza_type) pizza with [thin crust](crust), [extra olives](topping), and a [bottle of Coke Zero](drink) be delivered?
-
 - intent: thankyou
   examples: |
     - Alright, thank you
@@ -1341,19 +1105,8 @@ nlu:
     - Many thanks
     - Cheers
     - Thanks a lot
-
 - intent: goodbye
   examples: |
-    - Goodbye!
-    - Bye!
-    - See you later!
-    - Have a nice day!
-    - Thank you and bye!
-    - I'm done for now. Goodbye!
-    - Catch you later!
-    - See you soon!
-    - Talk to you later!
-    - Goodbye, take care!
     - Goodbye!
     - Bye!
     - See you later!
@@ -1405,8 +1158,6 @@ nlu:
     - Catch up with you soon!
     - Hasta pronto!
     - See ya!
-
-
 - intent: cancel_order
   examples: |
     - I want to cancel my order
@@ -1477,7 +1228,6 @@ nlu:
     - I want to cancel my order, it was a mistake
     - Please halt my order
     - I want to cancel my order right away
-        - I want to cancel my order.
     - Can you cancel the food order?
     - I need to cancel my order.
     - I'd like to cancel the order, please.
@@ -1566,49 +1316,10 @@ nlu:
     - Abort the bibimbap order.
     - I want to decline the poutine order.
     - Can you abort the ceviche order?
-
-- lookup: burger_type
-  examples: |
-    data/burger_type.yml
-- lookup: additional_notes
-  examples: |
-    data/additional_notes.yml
-
-
-- lookup: cuisine
-  examples: |
-    data/cuisine.yml
-
-
-- lookup: pizza_type
-  examples: |
-    data/pizza_type.yml
-
-- lookup: pizza_size
-  examples: |
-    data/pizza_size.yml
-
-- lookup: crust
-  examples: |
-    data/crust.yml
-
-- lookup: food_type
-  examples: |
-    data/food_type.yml
-
-- lookup: topping
-  examples: |
-    data/topping.yml
-
-- lookup: drink
-  examples: |
-    data/drinks.yml
-
 - synonym: coke
   examples: |
     - coca cola
     - coca-cola
-
 - synonym: pepsi
   examples: |
     - pepsi-cola
@@ -1616,71 +1327,56 @@ nlu:
   examples: |
     - Italian tiramisu
     - coffee-flavored tiramisu
-
 - synonym: brownie
   examples: |
     - chocolate brownie
     - fudge brownie
-
 - synonym: gulab jamun
   examples: |
     - gulaab jamun
     - roseberry
-
 - synonym: cheesecake
   examples: |
     - cheese cake
     - New York cheesecake
-
 - synonym: baklava
   examples: |
     - baklawa
     - balaclava
-
 - synonym: chocolate mousse
   examples: |
     - choco mousse
     - chocolate foam
-
 - synonym: rasmalai
   examples: |
     - roshmalai
     - ras malai
-
 - synonym: lemon tart
   examples: |
     - lemon dessert tart
     - lemon custard tart
-
 - synonym: carrot cake
   examples: |
     - carrot and walnut cake
     - carroty cake
-
 - synonym: black forest cake
   examples: |
-    - black forest gateau
     - black forest gateau
 - synonym: chicken
   examples: |
     - poultry
     - fowl
-
 - synonym: beef
   examples: |
     - cow meat
     - steak
-
 - synonym: vegetarian
   examples: |
     - veggie
-    - plant-based
-
 - synonym: vegan
   examples: |
     - plant-based
     - no animal products
-
 - synonym: lamb
   examples: |
     - sheep meat
@@ -1690,133 +1386,114 @@ nlu:
     - chicken hoagie
     - chicken grinder
     - chicken hero
-
 - synonym: turkey sandwich
   examples: |
     - turkey sub
     - turkey hoagie
     - turkey grinder
     - turkey hero
-
 - synonym: tuna sandwich
   examples: |
     - tuna sub
     - tuna hoagie
     - tuna grinder
     - tuna hero
-
 - synonym: ham and cheese sandwich
   examples: |
     - ham and cheese sub
     - ham and cheese hoagie
     - ham and cheese grinder
     - ham and cheese hero
-
 - synonym: grilled cheese sandwich
   examples: |
     - grilled cheese sub
     - grilled cheese hoagie
     - grilled cheese grinder
     - grilled cheese hero
-
 - synonym: veggie sandwich
   examples: |
     - veggie sub
     - veggie hoagie
     - veggie grinder
     - veggie hero
-
 - synonym: BLT sandwich
   examples: |
     - BLT sub
     - BLT hoagie
     - BLT grinder
     - BLT hero
-
 - synonym: bacon and egg sandwich
   examples: |
     - bacon and egg sub
     - bacon and egg hoagie
     - bacon and egg grinder
     - bacon and egg hero
-
 - synonym: club sandwich
   examples: |
     - club sub
     - club hoagie
     - club grinder
     - club hero
-
 - synonym: reuben sandwich
   examples: |
     - reuben sub
     - reuben hoagie
     - reuben grinder
     - reuben hero
-
 - synonym: roast beef sandwich
   examples: |
     - roast beef sub
     - roast beef hoagie
     - roast beef grinder
     - roast beef hero
-
 - synonym: French dip sandwich
   examples: |
     - French dip sub
     - French dip hoagie
     - French dip grinder
     - French dip hero
-
 - synonym: pastrami sandwich
   examples: |
     - pastrami sub
     - pastrami hoagie
     - pastrami grinder
     - pastrami hero
-
 - synonym: pulled pork sandwich
   examples: |
     - pulled pork sub
     - pulled pork hoagie
     - pulled pork grinder
     - pulled pork hero
-
 - synonym: meatball sandwich
   examples: |
     - meatball sub
     - meatball hoagie
     - meatball grinder
     - meatball hero
-
 - synonym: Cuban sandwich
   examples: |
     - Cuban sub
     - Cuban hoagie
     - Cuban grinder
     - Cuban hero
-
 - synonym: chicken salad sandwich
   examples: |
     - chicken salad sub
     - chicken salad hoagie
     - chicken salad grinder
     - chicken salad hero
-
 - synonym: caprese sandwich
   examples: |
     - caprese sub
     - caprese hoagie
     - caprese grinder
     - caprese hero
-
 - synonym: chicken Caesar sandwich
   examples: |
     - chicken Caesar sub
     - chicken Caesar hoagie
     - chicken Caesar grinder
     - chicken Caesar hero
-
 - synonym: smoked salmon sandwich
   examples: |
     - smoked salmon sub
@@ -1829,132 +1506,112 @@ nlu:
     - cheese burger
     - burger with cheese
     - burger topped with cheese
-
 - synonym: veggie burger
   examples: |
     - veggie burger
     - vegetarian burger
     - plant-based burger
     - burger made with vegetables
-
 - synonym: chicken burger
   examples: |
     - chicken burger
     - chicken sandwich
     - burger with chicken patty
     - breaded chicken burger
-
 - synonym: bacon burger
   examples: |
     - bacon burger
     - burger with bacon
     - burger topped with bacon
     - burger with crispy bacon
-
 - synonym: double cheeseburger
   examples: |
     - double cheeseburger
     - burger with two cheeses
     - burger with double cheese
-
 - synonym: grilled chicken burger
   examples: |
     - grilled chicken burger
     - burger with grilled chicken
     - burger topped with grilled chicken
-
 - synonym: portobello mushroom burger
   examples: |
     - portobello mushroom burger
     - mushroom burger
     - burger with portobello mushroom
     - vegetarian burger with mushroom
-
 - synonym: turkey burger
   examples: |
     - turkey burger
     - burger with turkey patty
     - ground turkey burger
     - burger made with turkey meat
-
 - synonym: classic beef burger
   examples: |
     - classic beef burger
     - beef burger
     - burger with beef patty
     - traditional hamburger
-
 - synonym: salmon burger
   examples: |
     - salmon burger
     - burger with salmon patty
     - grilled salmon burger
     - burger made with fresh salmon
-
 - synonym: black bean burger
   examples: |
     - black bean burger
     - vegetarian burger with black beans
     - bean patty burger
     - burger made with black bean patty
-
 - synonym: halloumi burger
   examples: |
     - halloumi burger
     - vegetarian burger with halloumi
     - halloumi cheese burger
     - burger topped with halloumi
-
 - synonym: lamb burger
   examples: |
     - lamb burger
     - burger with lamb patty
     - juicy lamb burger
     - burger made with ground lamb
-
 - synonym: falafel burger
   examples: |
     - falafel burger
     - vegetarian burger with falafel
     - Middle Eastern-inspired burger
     - burger made with falafel patty
-
 - synonym: quinoa burger
   examples: |
     - quinoa burger
     - vegetarian burger with quinoa
     - quinoa and vegetable burger
     - burger made with quinoa patty
-
 - synonym: bison burger
   examples: |
     - bison burger
     - burger with bison patty
     - lean bison burger
     - burger made with bison meat
-
 - synonym: tuna burger
   examples: |
     - tuna burger
     - burger with tuna patty
     - grilled tuna burger
     - burger made with fresh tuna
-
 - synonym: crab cake burger
   examples: |
     - crab cake burger
     - burger with crab cake
     - crab meat burger
     - burger topped with crab cake
-
 - synonym: tofu burger
   examples: |
     - tofu burger
     - vegetarian burger with tofu
     - tofu and vegetable burger
     - burger made with tofu patty
-
 - synonym: turkey and cranberry burger
   examples: |
     - turkey and cranberry burger
-   

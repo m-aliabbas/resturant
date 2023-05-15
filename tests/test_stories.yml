@@ -1,86 +1,86 @@
-#### This file contains tests to evaluate that your bot behaves as expected.
-#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+# #### This file contains tests to evaluate that your bot behaves as expected.
+# #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
-stories:
-- story: Placing a pizza order with a drink
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: place_order
-  - action: utter_ask_order
-  - intent: order_pizza
-    entities:
-    - pizza_size: "medium"
-    - pizza_type: "pepperoni"
-  - action: utter_confirm_pizza_order
-  - intent: add_drink
-    entities:
-    - drink: "Coke"
-  - action: utter_confirm_drink_order
-  - intent: confirm_order
-  - action: utter_ask_address
-  - intent: provide_address
-    entities:
-    - address: "123 Main Street"
-  - action: utter_confirm_address
-  - intent: ask_delivery_time
-  - action: utter_provide_delivery_time
-  - intent: thankyou
-  - action: utter_goodbye
+# stories:
+# - story: Placing a pizza order with a drink
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: place_order
+#   - action: utter_ask_order
+#   - intent: order_pizza
+#     entities:
+#     - pizza_size: "medium"
+#     - pizza_type: "pepperoni"
+#   - action: utter_confirm_pizza_order
+#   - intent: add_drink
+#     entities:
+#     - drink: "Coke"
+#   - action: utter_confirm_drink_order
+#   - intent: confirm_order
+#   - action: utter_ask_address
+#   - intent: provide_address
+#     entities:
+#     - address: "123 Main Street"
+#   - action: utter_confirm_address
+#   - intent: ask_delivery_time
+#   - action: utter_provide_delivery_time
+#   - intent: thankyou
+#   - action: utter_goodbye
 
-- story: Placing a pizza order with a topping and declining drinks
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: place_order
-  - action: utter_ask_order
-  - intent: order_pizza
-    entities:
-    - pizza_size: "large"
-    - pizza_type: "veggie"
-    - topping: "mushrooms"
-  - action: utter_confirm_pizza_order
-  - intent: decline_offer
-  - action: utter_confirm_order
-  - intent: confirm_order
-  - action: utter_ask_address
-  - intent: provide_address
-    entities:
-    - address: "456 Elm Street"
-  - action: utter_confirm_address
-  - intent: ask_delivery_time
-  - action: utter_provide_delivery_time
-  - intent: thankyou
-  - action: utter_goodbye
+# - story: Placing a pizza order with a topping and declining drinks
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: place_order
+#   - action: utter_ask_order
+#   - intent: order_pizza
+#     entities:
+#     - pizza_size: "large"
+#     - pizza_type: "veggie"
+#     - topping: "mushrooms"
+#   - action: utter_confirm_pizza_order
+#   - intent: decline_offer
+#   - action: utter_confirm_order
+#   - intent: confirm_order
+#   - action: utter_ask_address
+#   - intent: provide_address
+#     entities:
+#     - address: "456 Elm Street"
+#   - action: utter_confirm_address
+#   - intent: ask_delivery_time
+#   - action: utter_provide_delivery_time
+#   - intent: thankyou
+#   - action: utter_goodbye
 
 
-- story: Placing a pizza order with an invalid pizza type and then ordering a different pizza
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: place_order
-  - action: utter_ask_order
-  - intent: order_pizza
-    entities:
-    - pizza_size: "medium"
-    - pizza_type: "chicken"
-  - action: utter_invalid_pizza_type
-  - intent: order_pizza
-    entities:
-    - pizza_size: "medium"
-    - pizza_type: "pepperoni"
-  - action: utter_confirm_pizza_order
-  - intent: add_drink
-    entities:
-    - drink: "Pepsi"
-  - action: utter_confirm_drink_order
-  - intent: confirm_order
-  - action: utter_ask_address
-  - intent: provide_address
-    entities:
-    - address: "789 Maple Street"
-  - action: utter_confirm_address
-  - intent: ask_delivery_time
-  - action: utter_provide_delivery_time
-  - intent: thankyou
-  - action: utter_goodbye
+# - story: Placing a pizza order with an invalid pizza type and then ordering a different pizza
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: place_order
+#   - action: utter_ask_order
+#   - intent: order_pizza
+#     entities:
+#     - pizza_size: "medium"
+#     - pizza_type: "chicken"
+#   - action: utter_invalid_pizza_type
+#   - intent: order_pizza
+#     entities:
+#     - pizza_size: "medium"
+#     - pizza_type: "pepperoni"
+#   - action: utter_confirm_pizza_order
+#   - intent: add_drink
+#     entities:
+#     - drink: "Pepsi"
+#   - action: utter_confirm_drink_order
+#   - intent: confirm_order
+#   - action: utter_ask_address
+#   - intent: provide_address
+#     entities:
+#     - address: "789 Maple Street"
+#   - action: utter_confirm_address
+#   - intent: ask_delivery_time
+#   - action: utter_provide_delivery_time
+#   - intent: thankyou
+#   - action: utter_goodbye

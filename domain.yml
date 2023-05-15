@@ -1,89 +1,76 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - order_food
-  - greet
-  - place_order
-  - add_drink
-  - decline_offer
-  - confirm_order
-  - provide_address
-  - ask_delivery_time
-  - thankyou
-  - cancel_order
-  - goodbye
-  - add_dessert
-  - show_menu
-  - select_cuisine
-  - order_burger
-
+- add_dessert
+- add_drink
+- ask_delivery_time
+- cancel_order
+- confirm_order
+- decline_offer
+- goodbye
+- greet
+- order_burger
+- order_food
+- place_order
+- provide_address
+- select_cuisine
+- show_menu
+- thankyou
 entities:
-  - drink
-  - address
-  - dessert
-  - food_type
-  - cuisine
-  - additional_notes
-  - burger_type
-
-# slots:
-    # pizza_type:
-    #   type: text
-    #   mappings:
-    #   - type: from_entity
-    #     entity: pizza_type
-    # pizza_size:
-    #   type: text
-    #   mappings:
-    #   - type: from_entity
-    #     entity: pizza_size
-    # topping:
-    #   type: unfeaturized
-    # crust:
-    #   type: unfeaturized
-    # drink:
-    #   type: unfeaturized
-    # address:
-    #   type: text
-    # dessert:
-    #   type: unfeaturized
-
+- food_type
+- drink
+- address
+- dessert
+- cuisine
+- additional_notes
+- burger_type
+slots:
+  cuisine:
+    type: text
+    mappings:
+    - type: custom
+      action: action_show_menu
+  food_order:
+    type: text
+    mappings:
+    - type: custom
+      action: action_make_order
+  address:
+    type: text
+    mappings:
+    - type: custom
+      action: action_add_address
+templates:
+  utter_welcome_message:
+  - text: Hello, thank you for contacting City Resturant. How may I assist you today?
 responses:
-  utter_happy:
-    - text: "Hello,"
-    
   utter_greet:
-    - text: "Hello, thank you for contacting City Resturant. How may I assist you today?"
-
+  - text: Hello, thank you for contacting City Resturant. How may I assist you today?
   utter_ask_order:
-    - text: "Certainly, what would you like to order?"
-  
-  utter_confirm_order:
-    - text: "Prefect we confirm your order of {pizza_type} and {drink}"
-    
-  utter_confirm_pizza_order:
-    - text: "Perfect, one {pizza_size} {pizza_type} pizza it is. Would you like to add any drinks to your order?"
-
-  utter_offer_drinks:
-    - text: "Would you like to add any drinks to your order?"
-
-  utter_confirm_drink_order:
-    - text: "Great, one {drink} it is. Anything else? We also have a large variety of desserts to choose from."
-
+  - text: Certainly, what would you like to order?
+  utter_ask_cuisines:
+  - text: We have large varity of options. Whould you like chicken cuisines or beef cuisines?
+  utter_ask_sandwich_or_burger:
+  - text: Do you like any Sandwich or Burger?
   utter_ask_address:
-    - text: "Wonderful. Could you please confirm your delivery address for me?"
-
+  - text: Please provide the delivery address?
   utter_confirm_address:
-    - text: "Excellent. Your order has been placed, and your total bill comes to ${price}. Is there anything else you would like to ask regarding your order?"
-
-  utter_provide_delivery_time:
-    - text: "Of course, the estimated delivery time is between 40 to 45 minutes."
-
-  utter_goodbye:
-    - text: "You're welcome. Thank you for choosing Pizza Hut. Have a great day!"
-
-  utter_ask_order_cancellation:
-   - text: "Sorry for the problem. We have cancled your order"
-
-  utter_please_rephrase:
-  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  - text: Please confirm the following address
+  utter_confirm_order:
+  - text: Your order is following
+  utter_good_bye:
+  - text: Stay tuned. Good Bye
+  utter_say_again:
+  - text: I could not understand... Can You Say that again or rephrase
+actions:
+- utter_ask_cuisines
+- utter_ask_order
+- action_show_menu
+- action_make_order
+- action_add_address
+- action_add_burger
+- action_add_dessert
+- action_add_drink
+- utter_welcome_message
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
