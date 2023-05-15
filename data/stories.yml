@@ -1,13 +1,4 @@
 version: "3.1"
-  # - greet
-  # - place_order
-  # - order_pizza
-  # - add_drink
-  # - decline_offer
-  # - confirm_order
-  # - provide_address
-  # - ask_delivery_time
-  # - thankyou
 stories:
 - story: happy path 1
   steps:
@@ -54,33 +45,3 @@ stories:
     entities:
       - food_type : "chicken"
   - action: action_make_order
-
-- story: interactive_story_1
-  steps:
-  - intent: greet
-  - action: utter_ask_order
-  - intent: show_menu
-  - action: utter_ask_cuisines
-  - intent: order_food
-    entities:
-    - food_type: chicken
-  - slot_was_set:
-    - food_order:
-      - chicken
-      - chicken
-      - chicken
-      - chicken
-  - intent: select_cuisine
-    entities:
-    - food_type: chicken
-  - action: action_show_menu
-  - slot_was_set:
-    - cuisine: chicken
-  - intent: select_cuisine
-    entities:
-    - food_type: chicken karahi
-  - slot_was_set:
-    - cuisine: chicken karahi
-  - action: action_show_menu
-  - slot_was_set:
-    - cuisine: chicken karahi
