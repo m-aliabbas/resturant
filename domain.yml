@@ -8,6 +8,7 @@ intents:
 - decline_offer
 - goodbye
 - greet
+- nlu_fallback
 - order_burger
 - order_food
 - place_order
@@ -16,13 +17,13 @@ intents:
 - show_menu
 - thankyou
 entities:
-- food_type
-- drink
-- address
 - dessert
+- burger_type
+- food_type
+- address
+- drink
 - cuisine
 - additional_notes
-- burger_type
 slots:
   cuisine:
     type: text
@@ -43,6 +44,14 @@ templates:
   utter_welcome_message:
   - text: Hello, thank you for contacting City Resturant. How may I assist you today?
 responses:
+  utter_ask_burger_or_sandwich:
+  - text: '"Do you want to add Burger or Sandwich?"'
+  utter_ask_dessert:
+  - text: We have wide varity of desserts. Do you like to order any?
+  utter_ask_anything_else:
+  - text: Do You need anything else?
+  utter_ask_foor_drink:
+  - text: Whould You like
   utter_greet:
   - text: Hello, thank you for contacting City Resturant. How may I assist you today?
   utter_ask_order:
@@ -61,15 +70,27 @@ responses:
   - text: Stay tuned. Good Bye
   utter_say_again:
   - text: I could not understand... Can You Say that again or rephrase
+  utter_thanks:
+  - text: Thank You for contacting us, Stay tuned.
+
 actions:
-- utter_ask_cuisines
-- utter_ask_order
-- action_show_menu
-- action_make_order
-- action_add_address
-- action_add_burger
 - action_add_dessert
+- utter_thanks
+- utter_ask_burger_or_sandwich
+- utter_confirm_address
+- utter_ask_cuisines
+- action_add_burger
+- action_make_order
+- utter_ask_address
+- utter_confirm_order
+- utter_ask_foor_drink
+- utter_ask_dessert
+- action_show_menu
 - action_add_drink
+- action_add_address
+- utter_ask_order
+- utter_ask_anything_else
+- utter_good_bye
 - utter_welcome_message
 session_config:
   session_expiration_time: 60

@@ -1,65 +1,35 @@
-    - Whats available in [beef](food_type)
-    - Whats available in [beaf](food_type)
-    - What is made in [beef](food_type)
-    - Can you show me [chicken](food_type)
-    - Can you show me [mutton](food_type) menu
-    - I would like to eat [chicken](food_type)
-    - I am in the mood for [beef](food_type)
-    - Can I have some [seafood](food_type) dishes?
-    - I would prefer [vegetarian](food_type) cuisine
-    - I feel like having [pork](food_type) dishes
-    - Can we get some [vegan](food_type) options?
-    - Do you have [lamb](food_type) dishes?
-    - I want to eat [Italian](food_type) cuisine
-    - I am in the mood for [Mexican](food_type) food
-    - Can I have some [Chinese](food_type) dishes?
-    - I would prefer [Indian](food_type) cuisine
-    - I feel like having [French](food_type) dishes
-    - Can we get some [Thai](food_type) options?
-    - Do you have [Japanese](food_type) dishes?
-    - I want to eat [Greek](food_type) cuisine
-    - I am in the mood for [Spanish](food_type) food
-    - Can I have some [Korean](food_type) dishes?
-    - I would prefer [Vietnamese](food_type) 
-    - I feel like having [Lebanese](food_type) dishes
-    - Can we get some [Brazilian](food_type) options?
-    - Do you have [Turkish](food_type) dishes?
-    - I'm interested in [Mediterranean](food_type) cuisine
-    - I'd like to try some [Caribbean](food_type) food
-    - Can you suggest some [Middle Eastern](food_type) dishes?
-    - I have a craving for [Moroccan](food_type) cuisine
-    - I'm in the mood for [Ethiopian](food_type) food
-    - Can I have some [Russian](food_type) dishes?
-    - I'm thinking of [Portuguese](food_type) cuisine today
-    - I'd like to try [Cuban](food_type) food
-    - Can you suggest some [Peruvian](food_type) dishes?
-    - I feel like eating [Polish](food_type) cuisine
-    - I'd like to have [Filipino](food_type) food
-    - Can I try some [Argentinian](food_type) dishes?
-    - I'm interested in [South African](food_type) cuisine
-    - Can we get some [Danish](food_type) food?
-    - I'd like to try [Swedish](food_type) cuisine
-    - Can you suggest some [Belgian](food_type) dishes?
-    - I feel like eating [Dutch](food_type) cuisine
-    - I'm in the mood for [Nepalese](food_type) food
-    - Can I have some [Hungarian](food_type) dishes?
-    - Can you tell me what's good in [chicken](food_type)?
-    - What are some good [beef](food_type) dishes?
-    - What are the best dishes for [seafood](food_type)?
-    - Can you suggest some good [vegetarian](food_type) meals?
-    - What's the best [vegan](food_type) dish you have?
-    - What are some popular [pork](food_type) dishes?
-    - Can you recommend a good [lamb](food_type) dish?
-    - What's your best [Italian](food_type) dish?
-    - What's a popular [Mexican](food_type) dish?
-    - What's a good [Chinese](food_type) dish?
-    - What's the most popular [Indian](food_type) dish?
-    - What [French](food_type) dish do you recommend?
-    - What's a must-try [Thai](food_type) dish?
-    - What's the best [Japanese](food_type) dish you have?
-    - What's a good [Greek](food_type) dish to try?
-    - What's a popular [Spanish](food_type) dish?
-    - What's a good [Korean](food_type) dish?
-    - What's a must-try [Vietnamese](food_type) dish?
-    - What's the best [Lebanese](food_type) dish you have?
-    - Can you suggest a good [Brazilian](food_type) dish?
+    - Yes, I would like a [can of coke](drink)
+    - Can I get a [bottle of water](drink)?
+    - I'd like a [glass of lemonade](drink)
+    - Add a [bottle of Sprite](drink) to my order
+    - I want an [iced tea](drink)
+    - Give me a [can of Pepsi](drink), please
+    - Add a [glass of orange juice](drink) to my order
+    - Can I have a [cup of coffee](drink)?
+    - I'd like a [glass of milk](drink)
+    - Add a [can of Fanta](drink) to my order
+    - Yes, I would like a [can of Coke](drink) 
+    - Can I get a [bottle of water](drink) 
+    - Add a [bottle of Sprite](drink) to my order 
+    - Add a [glass of orange juice](drink) to my order 
+    - Can I have a [cup of coffee](drink) 
+    - I'd like a [glass of lemonade](drink)
+    - Add a [bottle of water](drink) to my order 
+    - Yes, I want a [can of Dr. Pepper](drink) 
+    - Can I get a [bottle of Mountain Dew](drink) 
+    - I'd like a [glass of iced tea](drink) 
+    - Can you add a [bottle of Sprite Zero](drink) to my order 
+    - Yes, I'd like a [can of Diet Coke](drink) 
+    - Can I get a [bottle of water](drink) 
+    - I'd like a [glass of orange juice](drink) 
+    - Add a [can of Fanta](drink) to my order 
+    - Can you add a [bottle of Sprite](drink) to my order 
+    - Yes, I want a [can of Coke Zero](drink)
+    - Can I get a [bottle of water](drink) 
+    - I'd like a [glass of lemonade](drink) 
+    - Add a [can of Pepsi](drink)
+    - Can you add a [bottle of water](drink) 
+    - Yes, I'd like a [glass of iced tea](drink) 
+    - Can I get a [can of Mountain Dew](drink) 
+    - Add a [bottle of Sprite Zero](drink) 
+    - Can you add a [can of Fanta Orange](drink) to my order 

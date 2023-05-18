@@ -1,47 +1,109 @@
 version: "3.1"
-stories:
-- story: happy path 1
-  steps:
-  # - action: utter_welcome_message
-  - intent: greet
-  - action: utter_ask_order
-  - intent: place_order 
-  - action: utter_ask_cuisines
-  - intent: select_cuisine
-    entities:
-    - food_type : "chicken"
-  - action: action_show_menu
-  - intent: order_food
-    entities:
-      - food_type : "chicken"
-  - action: action_make_order
 
-- story: happy path
+stories:
+
+
+- story: interactive_story_3
   steps:
-  # - action: utter_welcome_message
   - intent: place_order
   - action: utter_ask_cuisines
   - intent: select_cuisine
     entities:
-    - food_type : "chicken"
+    - food_type: chicken
+  - slot_was_set:
+    - cuisine: chicken
   - action: action_show_menu
+  - slot_was_set:
+    - cuisine: chicken
   - intent: order_food
     entities:
-    - food_type : "chicken"
+    - food_type: chicken bbq
+  - slot_was_set:
+    - food_order:
+      - chicken bbq
   - action: action_make_order
-
-- story: happy path 1
-  steps:
-  # - action: utter_welcome_message
-  - intent: greet
+  - slot_was_set:
+    - food_order:
+      - chicken bbq
+  - action: utter_ask_dessert
+  - intent: add_dessert
+    entities:
+    - dessert: kheer
+  - action: action_add_dessert
+  - action: utter_ask_burger_or_sandwich
+  - intent: decline_offer
+  - action: utter_ask_foor_drink
+  - intent: add_drink
+    entities:
+    - drink: cup of milk
+  - action: utter_confirm_order
+  - action: action_add_drink
   - action: utter_ask_order
-  - intent: show_menu
+  - action: utter_confirm_order
+  - intent: confirm_order
+  - action: utter_ask_address
+  - intent: provide_address
+    entities:
+    - address: house 89 Talagang
+  - action: utter_confirm_address
+  - intent: confirm_order
+  - action: utter_ask_anything_else
+  - intent: decline_offer
+  - action: utter_thanks
+
+- story: interactive_story_1
+  steps:
+  - intent: place_order
+  - slot_was_set:
+    - food_order: []
   - action: utter_ask_cuisines
   - intent: select_cuisine
     entities:
-    - food_type : "chicken"
+    - food_type: chicken
+  - slot_was_set:
+    - cuisine: chicken
   - action: action_show_menu
+  - slot_was_set:
+    - cuisine: chicken
   - intent: order_food
     entities:
-      - food_type : "chicken"
+    - food_type: chicken bbq
+  - slot_was_set:
+    - food_order:
+      - chicken bbq
   - action: action_make_order
+  - slot_was_set:
+    - food_order:
+      - chicken bbq
+  - action: utter_ask_dessert
+  - intent: add_dessert
+    entities:
+    - dessert: kheer
+  - action: action_add_dessert
+  - action: action_add_burger
+  - action: utter_ask_burger_or_sandwich
+  - intent: order_burger
+    entities:
+    - burger_type: chicken
+    - burger_type: roll burger
+  - action: action_add_burger
+  - action: utter_ask_foor_drink
+  - intent: add_drink
+    entities:
+    - drink: cup of milk
+  - action: utter_confirm_order
+  - intent: decline_offer
+  - intent: order_burger
+    entities:
+    - food_type: chicken bbq
+    - drink: cup of milk
+    - burger_type: chicken roll burger
+  - action: utter_confirm_order
+  - intent: confirm_order
+  - action: utter_ask_address
+  - intent: provide_address
+    entities:
+    - address: house 89 Talagang
+  - action: utter_confirm_address
+  - intent: confirm_order
+  - action: utter_thanks

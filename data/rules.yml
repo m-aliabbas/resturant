@@ -10,27 +10,6 @@ rules:
   - intent: show_menu
   - action: utter_ask_cuisines
 
-
-- rule: order_food
-  steps:
-  - intent: order_food
-  - action: action_make_order
-
-- rule: order sandwich
-  steps:
-  - intent: order_burger
-  - action: action_add_burger
-
-- rule: provide_address
-  steps:
-  - intent: provide_address
-  - action: utter_confirm_address
-
-- rule: add_dessert
-  steps:
-  - intent: add_dessert
-  - action: action_add_dessert
-
 - rule: place_order
   steps:
   - intent: place_order
@@ -50,16 +29,3 @@ rules:
   steps:
   - intent: nlu_fallback
   - action: utter_say_again
-
-# - rule: Say goodbye anytime the user says goodbye
-#   steps:
-#   - intent: goodbye
-#   - action: utter_goodbye
-# - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
-#   steps:
-#   - intent: nlu_fallback
-#   - action: utter_please_rephrase
-# # - rule: Say 'I am a bot' anytime the user challenges
-# #   steps:
-# #   - intent: bot_challenge
-# #   - action: utter_iamabot
